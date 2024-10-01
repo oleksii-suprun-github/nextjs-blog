@@ -33,7 +33,7 @@ describe('Hero Component', () => {
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        /This demo application, built with NextJS, TypeScript & Tailwind allows users to check latest company's news and events\./i,
+        /This demo application, built with NextJS, TypeScript & Tailwind allows users to check latest company`s news and events.\./i,
       ),
     ).toBeInTheDocument();
   });

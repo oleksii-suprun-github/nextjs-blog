@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Navbar = () => (
-  <div className="container navbar mx-auto mb-24 bg-brand-purple pt-12">
+  <div className="container navbar mx-auto mb-20 bg-brand-purple pt-12">
     <div className="navbar-start">
       <Link href="/">
         <Image src="/logo.svg" alt="Logo" width={150} height={50} />
