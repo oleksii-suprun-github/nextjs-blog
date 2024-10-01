@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Hero Component > should render correctly and match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center px-10 pb-24 pt-24 text-stone-200"
+  >
+    <div
+      class="mx-auto max-w-screen-md"
+    >
+      <img
+        alt="Logo"
+        height="50"
+        src="/logo.svg"
+        width="150"
+      />
+      <h1
+        class="mb-6 break-normal text-4xl font-black leading-relaxed sm:text-6xl sm:leading-[1.25]"
+      >
+        NextJS Newsletter Demo Project
+      </h1>
+      <div
+        class="mb-8 text-xl leading-relaxed text-stone-200 sm:text-2xl sm:leading-[1.65]"
+      >
+        This demo application, built with NextJS, TypeScript & Tailwind allows users to check latest company\`s news and events.
+      </div>
+      <div>
+        <a
+          href="/publications"
+        >
+          <button
+            class="btn btn-lg mb-5 border-0 bg-brand-pink text-gray-900 hover:bg-brand-light-pink"
+          >
+            Get Started
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

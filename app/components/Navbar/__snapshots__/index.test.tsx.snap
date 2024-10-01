@@ -1,0 +1,130 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Navbar Component > should render correctly and match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container navbar mx-auto mb-24 bg-brand-purple pt-12"
+  >
+    <div
+      class="navbar-start"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="Logo"
+          data-nimg="1"
+          decoding="async"
+          height="50"
+          loading="lazy"
+          src="/logo.svg"
+          style="color: transparent;"
+          width="150"
+        />
+      </a>
+    </div>
+    <div
+      class="navbar-center hidden md:flex"
+    >
+      <ul
+        class="menu menu-horizontal px-1 text-lg text-stone-200"
+      >
+        <li>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Events
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="navbar-end"
+    >
+      <div
+        class="dropdown dropdown-left bg-brand-dark-purple"
+      >
+        <div
+          class="btn btn-ghost md:hidden"
+          role="button"
+          tabindex="0"
+        >
+          <svg
+            class="size-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <ul
+          class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-brand-dark-purple p-2 shadow"
+          tabindex="0"
+        >
+          <li>
+            <a
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Events
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a
+        class="btn hidden bg-brand-pink text-stone-900 hover:bg-brand-light-pink md:flex"
+      >
+        Feedback
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

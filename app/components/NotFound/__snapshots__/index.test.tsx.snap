@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NotFound Component > should render correctly and match snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="flex min-h-screen items-center justify-center bg-brand-dark-purple"
+  >
+    <div
+      class="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16"
+    >
+      <div
+        class="mx-auto max-w-screen-sm text-center"
+      >
+        <h1
+          class="mb-4 text-7xl font-extrabold tracking-tight text-brand-pink lg:text-9xl"
+        >
+          404
+        </h1>
+        <p
+          class="mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl dark:text-stone-300"
+        >
+          Page Not Found
+        </p>
+        <p
+          class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400"
+        >
+          Sorry, we can\`t find that publication.
+        </p>
+        <a
+          class="btn bg-brand-pink text-gray-900 hover:bg-brand-light-pink"
+          href="/publications"
+        >
+          Back to Latest Publications page
+        </a>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
