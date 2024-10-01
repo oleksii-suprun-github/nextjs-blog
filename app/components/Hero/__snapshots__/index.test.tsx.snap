@@ -19,11 +19,11 @@ exports[`Hero Component > should render correctly and match snapshot 1`] = `
       >
         NextJS Newsletter Demo Project
       </h1>
-      <div
+      <p
         class="mb-8 text-xl leading-relaxed text-stone-200 sm:text-2xl sm:leading-[1.65]"
       >
         This demo application, built with NextJS, TypeScript & Tailwind allows users to check latest company\`s news and events.
-      </div>
+      </p>
       <div>
         <a
           href="/publications"

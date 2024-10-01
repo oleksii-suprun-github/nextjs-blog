@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function PublicationCard() {
   return (
-    <div className="card image-full w-96 bg-base-100 shadow-xl">
+    <div className="card image-full bg-base-100 shadow-xl">
       <figure>
         <Image
           width={400}
@@ -15,7 +15,7 @@ function PublicationCard() {
         <h2 className="card-title text-white">Shoes!</h2>
         <p className="text-white">If a dog chews shoes whose shoes does he choose?</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-sm bg-brand-dark-purple hover:bg-brand-purple">
+          <button className="btn btn-sm mt-6 bg-brand-dark-purple hover:bg-brand-purple md:mt-0">
             Read More
           </button>
         </div>

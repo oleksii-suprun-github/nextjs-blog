@@ -4,7 +4,7 @@ function PublicationsList({ items }: { items?: any }) {
   console.log(items);
 
   return (
-    <div className="grid gap-10 md:grid-cols-3">
+    <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
       <PublicationCard />
       <PublicationCard />
       <PublicationCard />
