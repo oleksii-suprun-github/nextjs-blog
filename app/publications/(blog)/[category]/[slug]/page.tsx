@@ -5,11 +5,8 @@ import { client } from '@/sanity/lib/client';
 import { SanityPost, SanityPostMeta } from '@/app/types';
 import { SITE_BRAND_TITLE_ENDING } from '@/app/constants';
 
-import {
-  PortableText,
-  type PortableTextBlock,
-  type PortableTextComponentProps,
-} from '@portabletext/react';
+import { PortableText } from '@portabletext/react';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const revalidate = 60;
 
@@ -40,32 +37,19 @@ export default async function Page({ params }: { params: { slug: string } }) {
     dateStyle: 'long',
   }).format(new Date(post.publishedAt));
 
-  const parsedContentComponents = {
-    block: {
-      h1: ({ children }: PortableTextComponentProps<PortableTextBlock>) => (
-        <h1 className="text-stone-200">{children}</h1>
-      ),
-      h2: ({ children }: PortableTextComponentProps<PortableTextBlock>) => (
-        <h2 className="text-stone-200">{children}</h2>
-      ),
-      h3: ({ children }: PortableTextComponentProps<PortableTextBlock>) => (
-        <h3 className="text-stone-200">{children}</h3>
-      ),
-      h4: ({ children }: PortableTextComponentProps<PortableTextBlock>) => (
-        <h4 className="text-stone-200">{children}</h4>
-      ),
-    },
-  };
-
   return (
     <main className="bg-brand-dark-purple px-4 py-16 text-stone-200">
       <section className="container mx-auto">
+        <div className="mb-16">
+          <Breadcrumbs />
+        </div>
+
         <h1 className="mb-5 text-5xl leading-normal">{post.title}</h1>
         <p className="mb-16">
           <em>Published {creationDate}</em>
         </p>
-        <div className="prose-lg prose mb-12 text-stone-200">
-          <PortableText value={post.content} components={parsedContentComponents} />
+        <div className="prose prose-lg mb-12 text-stone-200 prose-headings:text-stone-200 prose-strong:text-stone-200">
+          <PortableText value={post.content} />
         </div>
       </section>
     </main>

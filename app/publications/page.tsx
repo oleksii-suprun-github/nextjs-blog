@@ -1,5 +1,6 @@
 import { sanityFetch } from '@/sanity/lib/fetch';
 import { getPostsQuery } from '@/sanity/lib/queries';
+import Breadcrumbs from '../components/Breadcrumbs';
 import PublicationsList from '../components/PublicationsList';
 import { PublicationsSection, HeadlineWithDescription } from '../ui-lib';
 import { SanityPostPreview } from '../types';
@@ -32,6 +33,10 @@ export default async function LatestPublicationsPage() {
   return (
     <main className="bg-brand-dark-purple px-4 py-16">
       <section className="container mx-auto">
+        <div className="mb-16">
+          <Breadcrumbs />
+        </div>
+
         <PublicationsSection>
           <HeadlineWithDescription
             headline="Latest Publications"

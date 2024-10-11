@@ -21,7 +21,7 @@ export const getPostsQuery = (category: string, limit: number = 3) =>
     publishedAt
 }`;
 
-export const categoryPostsQuery = groq`*[_type == "post" && $category in categories[]->slug.current] | order(publishedAt desc) {
+export const categoryPostsQuery = groq`*[_type == "post" && $category in categories[]->slug.current] | order(publishedAt desc) [0...6] {
   title,
   "category": categories[0]->{
     title,
