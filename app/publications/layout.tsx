@@ -1,8 +1,9 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { SITE_BRAND_TITLE_ENDING } from '../constants';
 
 export const metadata = {
-  title: 'Latest Publications | Agora Energiewende',
+  title: `Latest Publications ${SITE_BRAND_TITLE_ENDING}`,
   description: 'Stay updated with our latest news and events.',
 };
 

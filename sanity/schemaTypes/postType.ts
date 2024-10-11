@@ -10,6 +10,7 @@ export const postType = defineType({
     defineField({
       name: 'title',
       type: 'string',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'slug',
@@ -17,15 +18,12 @@ export const postType = defineType({
       options: {
         source: 'title',
       },
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: 'author',
-      type: 'reference',
-      to: { type: 'author' },
-    }),
-    defineField({
-      name: 'mainImage',
+      name: 'previewImage',
       type: 'image',
+      validation: (Rule) => Rule.required(),
       options: {
         hotspot: true,
       },
@@ -34,11 +32,38 @@ export const postType = defineType({
           name: 'alt',
           type: 'string',
           title: 'Alternative text',
+          options: {
+            source: 'title',
+          },
+        },
+      ],
+    }),
+    defineField({
+      name: 'previewText',
+      type: 'string',
+      validation: (Rule) => Rule.required().min(50).max(180),
+    }),
+    defineField({
+      name: 'mainImage',
+      type: 'image',
+      validation: (Rule) => Rule.required(),
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative text',
+          options: {
+            source: 'title',
+          },
         },
       ],
     }),
     defineField({
       name: 'categories',
+      validation: (Rule) => Rule.required(),
       type: 'array',
       of: [defineArrayMember({ type: 'reference', to: { type: 'category' } })],
     }),
@@ -47,19 +72,18 @@ export const postType = defineType({
       type: 'datetime',
     }),
     defineField({
-      name: 'body',
+      validation: (Rule) => Rule.required(),
+      name: 'content',
       type: 'blockContent',
     }),
   ],
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
       media: 'mainImage',
     },
     prepare(selection) {
-      const { author } = selection;
-      return { ...selection, subtitle: author && `by ${author}` };
+      return { ...selection };
     },
   },
 });

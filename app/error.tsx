@@ -2,9 +2,10 @@
 
 import { useEffect } from 'react';
 import ErrorMessage from './components/ErrorMessage';
+import { SITE_BRAND_TITLE_ENDING } from './constants';
 
 export const metadata = {
-  title: 'Something went wrong | Agora Energiewende',
+  title: `Something went wrong ${SITE_BRAND_TITLE_ENDING}`,
 };
 
 export default function GlobalError({

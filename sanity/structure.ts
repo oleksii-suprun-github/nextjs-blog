@@ -1,9 +1,10 @@
+import { SITE_BRAND_TITLE_ENDING } from '@/app/constants';
 import type { StructureResolver } from 'sanity/structure';
 
 // https://www.sanity.io/docs/structure-builder-cheat-sheet
 export const structure: StructureResolver = (S) =>
   S.list()
-    .title('Blog')
+    .title(`Blog Content Management ${SITE_BRAND_TITLE_ENDING}`)
     .items([
       S.documentTypeListItem('post').title('Posts'),
       S.documentTypeListItem('category').title('Categories'),

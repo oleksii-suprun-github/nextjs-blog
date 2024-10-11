@@ -1,5 +1,5 @@
-import NotFound from './components/NotFound';
-import { SITE_BRAND_TITLE_ENDING } from './constants';
+import NotFound from '@/app/components/NotFound';
+import { SITE_BRAND_TITLE_ENDING } from '@/app/constants';
 
 export const metadata = {
   title: `Page Not Found ${SITE_BRAND_TITLE_ENDING}`,
