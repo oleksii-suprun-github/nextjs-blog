@@ -3,7 +3,12 @@ import { getPostsQuery } from '@/sanity/lib/queries';
 import PublicationsList from '../components/PublicationsList';
 import { PublicationsSection, HeadlineWithDescription } from '../ui-lib';
 import { SanityPostPreview } from '../types';
-import { SITE_BRAND_TITLE_ENDING } from '../constants';
+import {
+  BLOG_URL,
+  EVENTS_RECORDINGS_URL,
+  SITE_BRAND_TITLE_ENDING,
+  UPCOMING_EVENTS_URL,
+} from '../constants';
 
 export const metadata = {
   title: `Latest Publications ${SITE_BRAND_TITLE_ENDING}`,
@@ -31,6 +36,7 @@ export default async function LatestPublicationsPage() {
           <HeadlineWithDescription
             headline="Latest Publications"
             description="Discover our newest articles and research papers"
+            link={BLOG_URL}
           />
           <PublicationsList items={publications} />
         </PublicationsSection>
@@ -39,6 +45,7 @@ export default async function LatestPublicationsPage() {
           <HeadlineWithDescription
             headline="Upcoming Events"
             description="Join us for webinars, workshops, and more."
+            link={UPCOMING_EVENTS_URL}
           />
           <PublicationsList items={upcomingEvents} />
         </PublicationsSection>
@@ -47,6 +54,7 @@ export default async function LatestPublicationsPage() {
           <HeadlineWithDescription
             headline="Past Event Recordings"
             description="Watch recordings of our previous events"
+            link={EVENTS_RECORDINGS_URL}
           />
           <PublicationsList items={pastEventRecordings} />
         </PublicationsSection>

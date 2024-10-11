@@ -5,8 +5,8 @@ export const categoryQuery = groq`*[_type == "category" && slug.current == $cate
   description
 }[0]`;
 
-export const getPostsQuery = (category: string, limit: number = 6) =>
-  groq`*[_type == "post" && "${category}" in categories[]->slug.current] | order(date desc) [0...${limit}] {
+export const getPostsQuery = (category: string, limit: number = 3) =>
+  groq`*[_type == "post" && "${category}" in categories[]->slug.current] | order(publishedAt desc) [0...${limit}] {
     title,
     "category": categories[0]->{
       title,
@@ -18,10 +18,10 @@ export const getPostsQuery = (category: string, limit: number = 6) =>
         "url": previewImage.asset->url,
         "alt": previewImage.alt
     },
-    "createdAt": _createdAt,
+    publishedAt
 }`;
 
-export const categoryPostsQuery = groq`*[_type == "post" && $category in categories[]->slug.current] | order(date desc) {
+export const categoryPostsQuery = groq`*[_type == "post" && $category in categories[]->slug.current] | order(publishedAt desc) {
   title,
   "category": categories[0]->{
     title,
@@ -33,7 +33,7 @@ export const categoryPostsQuery = groq`*[_type == "post" && $category in categor
       "url": previewImage.asset->url,
       "alt": previewImage.alt
   },
-  "createdAt": _createdAt,
+  publishedAt
 }`;
 
 export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{ 
@@ -48,7 +48,7 @@ export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{
         "url": mainImage.asset->url,
         "alt": mainImage.alt
     },
-    "createdAt": _createdAt,
+    publishedAt
   }`;
 
 export const postPathsQuery = groq`*[_type == "post" && defined(slug.current)][]{

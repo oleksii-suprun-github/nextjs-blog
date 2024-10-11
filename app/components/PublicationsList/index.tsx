@@ -14,7 +14,7 @@ function PublicationsList({ items }: { items?: SanityPostPreview[] }) {
           category={publication.category}
           slug={publication.slug}
           previewText={publication.previewText}
-          createdAt={publication.createdAt}
+          publishedAt={publication.publishedAt}
           image={publication.image}
           key={index}
         />

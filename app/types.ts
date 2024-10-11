@@ -1,3 +1,5 @@
+import { TypedObject } from '@sanity/types';
+
 export type SanityCategory = {
   title?: string;
   description?: string;
@@ -18,7 +20,7 @@ type SanityPostBase = {
     url: string;
     alt?: string;
   };
-  createdAt: string;
+  publishedAt: string;
 };
 
 export type SanityPostPreview = SanityPostBase & {
@@ -26,5 +28,5 @@ export type SanityPostPreview = SanityPostBase & {
 };
 
 export type SanityPost = SanityPostBase & {
-  content: string;
+  content: TypedObject;
 };
