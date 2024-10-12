@@ -20,12 +20,12 @@ const Drawer = ({
 }) => (
   <div className="drawer">
     <input ref={toggleRef} id="drawer-mobile" type="checkbox" className="drawer-toggle" />
-    <div className="drawer-content">
+    <div className="drawer-content z-50">
       <label htmlFor="drawer-mobile" className="drawer-button text-stone-300">
         {icon}
       </label>
     </div>
-    <div className="drawer-side z-30">
+    <div className="drawer-side z-50">
       <label htmlFor="drawer-mobile" aria-label="close sidebar" className="drawer-overlay"></label>
       <div className="menu min-h-full w-80 bg-brand-dark-purple p-4 text-stone-300">{children}</div>
     </div>

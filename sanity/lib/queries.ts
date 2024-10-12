@@ -43,6 +43,7 @@ export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{
       "url": slug.current
     },
     "slug": slug.current,
+    previewText,
     content,
     "image": {
         "url": mainImage.asset->url,

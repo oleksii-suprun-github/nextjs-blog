@@ -7,8 +7,9 @@ import { FiMenu } from 'react-icons/fi';
 import Navigation from '../Navigation';
 import { Drawer, Modal } from '@/app/ui-lib';
 import FeedbackForm from '../FeedbackForm';
+import clsx from 'clsx';
 
-const Navbar = () => {
+const Navbar = ({ transparent }: { transparent?: boolean }) => {
   const feedbackModalFormRef = useRef<HTMLDialogElement>(null);
   const drawerToggleRef = useRef<HTMLInputElement>(null);
 
@@ -26,7 +27,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar mb-20 bg-brand-purple px-4 pt-12">
+      <nav
+        className={clsx(
+          'navbar px-4 pb-20 pt-12',
+          transparent ? 'bg-transparent' : 'bg-brand-purple',
+        )}
+      >
         <div className="container mx-auto">
           <div className="navbar-start">
             <Link href="/">

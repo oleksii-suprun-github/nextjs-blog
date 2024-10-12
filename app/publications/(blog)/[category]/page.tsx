@@ -4,10 +4,12 @@ import { postPathsQuery, categoryQuery, categoryPostsQuery } from '@/sanity/lib/
 import { client } from '@/sanity/lib/client';
 import PublicationsList from '@/app/components/PublicationsList';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
+import Pagination from '@/app/components/Pagination';
+import Footer from '@/app/components/Footer';
+import Navbar from '@/app/components/Navbar';
 import { HeadlineWithDescription, PublicationsSection } from '@/app/ui-lib';
 import { SanityCategory, SanityPostPreview } from '@/app/types';
 import { SITE_BRAND_TITLE_ENDING } from '@/app/constants';
-import Pagination from '@/app/components/Pagination';
 
 export const revalidate = 60;
 
@@ -44,21 +46,28 @@ export default async function Page({ params }: { params: { category: string } })
   }
 
   return (
-    <section className="bg-brand-dark-purple px-4 py-16">
-      <section className="container mx-auto mb-12">
-        <Breadcrumbs />
-      </section>
-      <section className="container mx-auto">
-        <PublicationsSection>
-          <HeadlineWithDescription
-            headline={categoryMetadata.title as string}
-            description={categoryMetadata.description as string}
-            category
-          />
-          <PublicationsList items={posts} />
-          <Pagination />
-        </PublicationsSection>
-      </section>
-    </section>
+    <>
+      <Navbar />
+      <main>
+        {' '}
+        <section className="bg-brand-dark-purple px-4 py-16">
+          <section className="container mx-auto mb-12">
+            <Breadcrumbs />
+          </section>
+          <section className="container mx-auto">
+            <PublicationsSection>
+              <HeadlineWithDescription
+                headline={categoryMetadata.title as string}
+                description={categoryMetadata.description as string}
+                category
+              />
+              <PublicationsList items={posts} />
+              <Pagination />
+            </PublicationsSection>
+          </section>
+        </section>
+      </main>
+      <Footer />
+    </>
   );
 }

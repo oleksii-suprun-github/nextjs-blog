@@ -1,5 +1,5 @@
 const Footer = () => (
-  <footer className="footer footer-center rounded bg-brand-purple p-10 text-white">
+  <footer className="footer footer-center relative z-10 bg-brand-purple p-10 text-white">
     <nav className="grid grid-flow-col gap-4">
       <a href="#" className="link-hover link">
         About us
