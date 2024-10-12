@@ -11,7 +11,7 @@ import { HeadlineWithDescription, PublicationsSection } from '@/app/ui-lib';
 import { SanityCategory, SanityPostPreview } from '@/app/types';
 import { SITE_BRAND_TITLE_ENDING } from '@/app/constants';
 
-export const revalidate = 60;
+export const revalidate = 3600;
 
 export async function generateMetadata({ params }: { params: { category: string } }) {
   const categoryMetadata = await sanityFetch<SanityCategory>({

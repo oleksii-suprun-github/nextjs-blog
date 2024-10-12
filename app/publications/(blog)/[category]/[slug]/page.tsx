@@ -11,7 +11,7 @@ import Navbar from '@/app/components/Navbar';
 import { SanityPost, SanityPostMeta } from '@/app/types';
 import { SITE_BRAND_TITLE_ENDING } from '@/app/constants';
 
-export const revalidate = 60;
+export const revalidate = 3600;
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const postMetadata = await sanityFetch<SanityPostMeta>({
@@ -38,8 +38,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   const postBackgroundURL = post.image.url;
 
-  console.log(post.image.url);
-
   const creationDate = new Intl.DateTimeFormat('en-GB', {
     dateStyle: 'long',
   }).format(new Date(post.publishedAt));
@@ -65,7 +63,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
               alt={post.image.alt || post.title}
               width={1920}
               height={1080}
+              quality={60}
+              priority
               className="h-full w-full object-cover lg:h-auto lg:w-screen"
+              placeholder="blur"
+              blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmHOiHgAD7QHlxT90/wAAAABJRU5ErkJggg=="
             />
           </figure>
 

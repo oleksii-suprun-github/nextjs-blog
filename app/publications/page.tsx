@@ -19,7 +19,7 @@ export const metadata = {
     'How can we achieve climate neutrality? Our scientific analyses and policy recommendations present effective pathways and solutions.',
 };
 
-export const revalidate = 60;
+export const revalidate = 3600;
 
 export default async function LatestPublicationsPage() {
   const publications = await sanityFetch<SanityPostPreview[]>({

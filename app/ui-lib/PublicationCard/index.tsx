@@ -25,6 +25,7 @@ function PublicationCard({
             height={200}
             src={urlFor(image.url).width(400).url()}
             alt={image.alt || title}
+            quality={60}
             placeholder="blur"
             blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmHOiHgAD7QHlxT90/wAAAABJRU5ErkJggg=="
           />
