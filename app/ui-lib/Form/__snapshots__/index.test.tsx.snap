@@ -4,7 +4,7 @@ exports[`Form Component > matches snapshot 1`] = `
 <DocumentFragment>
   <form
     class="flex flex-col text-gray-200"
-    role="form"
+    data-testid="form"
   >
     <div>
       Test Child

@@ -3,7 +3,7 @@
 exports[`Footer Component > should render correctly and match snapshot 1`] = `
 <DocumentFragment>
   <footer
-    class="footer footer-center rounded bg-brand-purple p-10 text-white"
+    class="footer footer-center relative z-10 bg-brand-purple p-10 text-white"
   >
     <nav
       class="grid grid-flow-col gap-4"

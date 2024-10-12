@@ -46,18 +46,24 @@ export default async function Page({ params }: { params: { slug: string } }) {
     <>
       <Navbar transparent />
       <main>
-        <article className="pt-4 text-stone-200 lg:pt-16">
-          <header className="container mx-auto px-4">
-            <div className="mb-16">
-              <Breadcrumbs />
+        <article className="text-stone-200 lg:pt-16">
+          <header className="px-4">
+            <div className="container mx-auto">
+              <div className="mb-16">
+                <Breadcrumbs />
+              </div>
+              <p className="mb-5">
+                <em>Published {creationDate}</em>
+              </p>
+              <h1 className="mb-10 max-w-2xl text-4xl leading-normal lg:text-5xl lg:leading-normal">
+                {post.title}
+              </h1>
+              <p className="mb-24 max-w-lg text-xl leading-normal lg:mb-32 lg:leading-relaxed">
+                {post.previewText}
+              </p>
             </div>
-            <p className="mb-5">
-              <em>Published {creationDate}</em>
-            </p>
-            <h1 className="mb-10 max-w-2xl text-4xl leading-normal lg:text-5xl">{post.title}</h1>
-            <p className="mb-24 max-w-lg text-xl leading-normal lg:mb-32">{post.previewText}</p>
           </header>
-          <figure className="absolute left-0 top-0 -z-10 h-[140vh] w-full overflow-hidden after:absolute after:inset-0 after:h-full after:bg-brand-dark-purple after:bg-opacity-70 after:content-['']">
+          <figure className="absolute left-0 top-0 -z-10 h-[150vh] w-full overflow-hidden after:absolute after:inset-0 after:h-full after:bg-brand-dark-purple after:bg-opacity-70 after:content-['']">
             <Image
               src={postBackgroundURL}
               alt={post.image.alt || post.title}

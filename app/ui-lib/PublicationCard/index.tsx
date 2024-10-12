@@ -28,6 +28,7 @@ function PublicationCard({
             quality={60}
             placeholder="blur"
             blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmHOiHgAD7QHlxT90/wAAAABJRU5ErkJggg=="
+            priority
           />
         </figure>
         <div className="card-body">

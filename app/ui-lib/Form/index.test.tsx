@@ -35,7 +35,7 @@ describe('Form Component', () => {
       </Form>,
     );
 
-    const formElement = screen.getByRole('form', { hidden: true });
+    const formElement = screen.getByTestId('form');
     expect(formElement).toHaveClass('flex flex-col text-gray-200');
   });
 

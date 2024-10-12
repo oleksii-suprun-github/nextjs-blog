@@ -8,7 +8,7 @@ function Form({
   children: ReactNode;
 }) {
   return (
-    <form role="form" onSubmit={action} className="flex flex-col text-gray-200">
+    <form data-testid="form" onSubmit={action} className="flex flex-col text-gray-200">
       {children}
     </form>
   );
