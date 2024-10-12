@@ -179,7 +179,7 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
                   </a>
                 </div>
                 <a
-                  class="btn mx-auto w-2/3 bg-brand-pink text-stone-900 hover:bg-brand-light-pink"
+                  class="btn mx-auto w-2/3 border-0 bg-brand-pink text-stone-900 hover:bg-brand-light-pink"
                 >
                   Feedback
                 </a>
@@ -188,12 +188,34 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
           </div>
         </div>
         <a
-          class="btn hidden bg-brand-pink text-stone-900 hover:bg-brand-light-pink lg:flex"
+          class="btn hidden border-0 bg-brand-pink text-stone-900 hover:bg-brand-light-pink lg:flex"
         >
           Feedback
         </a>
       </div>
     </div>
   </nav>
+  <dialog
+    class="modal"
+  >
+    <div
+      class="modal-box"
+    >
+      <form
+        method="dialog"
+      >
+        <button
+          class="btn btn-circle btn-ghost btn-sm absolute right-2 top-2"
+        >
+          ✕
+        </button>
+      </form>
+      <form>
+        <h3>
+          Feedback form
+        </h3>
+      </form>
+    </div>
+  </dialog>
 </DocumentFragment>
 `;

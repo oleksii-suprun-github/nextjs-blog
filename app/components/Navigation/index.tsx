@@ -9,10 +9,10 @@ const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAn
   const isActiveLink = (href: string) => path === href;
 
   const navigationLinks = [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '#' },
-    { label: 'Publications', href: '#' },
-    { label: 'Contact', href: '#' },
+    { uid: 'home', label: 'Home', href: '/' },
+    { uid: 'about', label: 'About', href: '#' },
+    { uid: 'publications', label: 'Publications', href: '#' },
+    { uid: 'contact', label: 'Contact', href: '#' },
   ];
 
   return (
@@ -24,7 +24,7 @@ const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAn
               ? 'mb-5 text-2xl font-bold lg:mb-0 lg:mr-12 lg:text-base'
               : 'mb-5 text-lg lg:mb-0 lg:mr-12 lg:text-base'
           }
-          key={link.href}
+          key={link.uid}
           href={link.href}
           onClick={onClick}
         >

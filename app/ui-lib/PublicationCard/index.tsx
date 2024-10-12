@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { SanityPostPreview } from '@/app/types';
+import { urlFor } from '@/sanity/lib/image';
 
 function PublicationCard({
   title,
@@ -17,12 +18,12 @@ function PublicationCard({
 
   return (
     <Link href={link}>
-      <div className="card image-full bg-cover shadow-xl">
+      <div className="card image-full h-full bg-cover shadow-xl">
         <figure>
           <Image
             width={400}
             height={200}
-            src={image.url}
+            src={urlFor(image.url).width(400).url()}
             alt={image.alt || title}
             placeholder="blur"
             blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmHOiHgAD7QHlxT90/wAAAABJRU5ErkJggg=="
@@ -33,7 +34,7 @@ function PublicationCard({
           <h2 className="card-title mb-4 text-stone-200">{title}</h2>
           <p className="text-stone-200">{previewText}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-sm bg-brand-dark-purple hover:bg-brand-purple">
+            <button className="btn btn-sm bg-brand-dark-purple text-gray-300 hover:bg-brand-purple">
               Read More
             </button>
           </div>
