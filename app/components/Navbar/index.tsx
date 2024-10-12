@@ -5,8 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FiMenu } from 'react-icons/fi';
 import Navigation from '../Navigation';
-import Drawer from '@/app/ui-lib/Drawer';
-import Modal from '@/app/ui-lib/Modal';
+import { Drawer, Modal } from '@/app/ui-lib';
 import FeedbackForm from '../FeedbackForm';
 
 const Navbar = () => {

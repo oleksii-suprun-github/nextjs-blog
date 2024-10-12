@@ -1,5 +1,5 @@
 import { SanityPostPreview } from '@/app/types';
-import PublicationCard from '@/app/ui-lib/PublicationCard';
+import { PublicationCard } from '@/app/ui-lib';
 
 function PublicationsList({ items }: { items?: SanityPostPreview[] }) {
   if (!items?.length) {

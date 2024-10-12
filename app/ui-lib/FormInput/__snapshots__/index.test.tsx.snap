@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormInput Component > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="mb-5 flex flex-col"
+  >
+    <input
+      class="input input-bordered bg-purple-950 placeholder:text-gray-400"
+      name="test"
+      placeholder="Your Name"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;
