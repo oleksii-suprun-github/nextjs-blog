@@ -21,7 +21,6 @@ const Navbar = () => {
 
   const feedbackFormRefHandler = () => {
     if (feedbackModalFormRef.current) {
-      console.log(feedbackModalFormRef);
       feedbackModalFormRef.current.showModal();
     }
   };
@@ -42,8 +41,11 @@ const Navbar = () => {
             <div className="lg:hidden">
               <Drawer toggleRef={drawerToggleRef} icon={<FiMenu size={38} />}>
                 <Navigation onClick={drawerToggleHandler} />
-                <a className="btn mx-auto w-2/3 border-0 bg-brand-pink text-stone-900 hover:bg-brand-light-pink">
-                  Feedback
+                <a
+                  onClick={feedbackFormRefHandler}
+                  className="btn mx-auto w-2/3 border-0 bg-brand-pink text-stone-900 hover:bg-brand-light-pink"
+                >
+                  Leave a Feedback
                 </a>
               </Drawer>
             </div>
@@ -51,7 +53,7 @@ const Navbar = () => {
               onClick={feedbackFormRefHandler}
               className="btn hidden border-0 bg-brand-pink text-stone-900 hover:bg-brand-light-pink lg:flex"
             >
-              Feedback
+              Leave a Feedback
             </a>
           </div>
         </div>

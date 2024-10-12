@@ -61,7 +61,7 @@ describe('Navbar Component', () => {
 
   it('should display the Feedback buttons', () => {
     render(<Navbar />);
-    const feedbackButton = screen.getAllByText('Feedback');
+    const feedbackButton = screen.getAllByText('Leave a Feedback');
     expect(feedbackButton).toHaveLength(2);
   });
 });

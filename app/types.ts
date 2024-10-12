@@ -30,3 +30,9 @@ export type SanityPostPreview = SanityPostBase & {
 export type SanityPost = SanityPostBase & {
   content: TypedObject;
 };
+
+export type FeedbackFormData = {
+  name: string;
+  email: string;
+  message: string;
+};

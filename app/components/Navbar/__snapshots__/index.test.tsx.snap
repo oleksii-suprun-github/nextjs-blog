@@ -181,7 +181,7 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
                 <a
                   class="btn mx-auto w-2/3 border-0 bg-brand-pink text-stone-900 hover:bg-brand-light-pink"
                 >
-                  Feedback
+                  Leave a Feedback
                 </a>
               </div>
             </div>
@@ -190,7 +190,7 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
         <a
           class="btn hidden border-0 bg-brand-pink text-stone-900 hover:bg-brand-light-pink lg:flex"
         >
-          Feedback
+          Leave a Feedback
         </a>
       </div>
     </div>
@@ -199,7 +199,7 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
     class="modal"
   >
     <div
-      class="modal-box"
+      class="modal-box bg-brand-purple"
     >
       <form
         method="dialog"
@@ -210,10 +210,51 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
           ✕
         </button>
       </form>
-      <form>
-        <h3>
-          Feedback form
-        </h3>
+      <form
+        class="flex flex-col text-gray-200"
+      >
+        <h2
+          class="mb-10 text-center text-2xl"
+        >
+          Please leave your feedback
+        </h2>
+        <div
+          class="mb-5 flex flex-col"
+        >
+          <input
+            class="input input-bordered bg-purple-950"
+            name="name"
+            placeholder="Your Name"
+            type="text"
+          />
+        </div>
+        <div
+          class="mb-5 flex flex-col"
+        >
+          <input
+            class="input input-bordered bg-purple-950"
+            name="email"
+            placeholder="Your Email"
+            type="email"
+          />
+        </div>
+        <div
+          class="mb-5 flex flex-col"
+        >
+          <textarea
+            class="textarea textarea-bordered resize-none bg-purple-950 p-4"
+            name="message"
+            placeholder="Your Feedback"
+            rows="5"
+          />
+        </div>
+        <button
+          class="btn ml-auto mt-4 bg-brand-pink text-stone-900 hover:bg-brand-light-pink"
+          disabled=""
+          type="submit"
+        >
+          Submit
+        </button>
       </form>
     </div>
   </dialog>
