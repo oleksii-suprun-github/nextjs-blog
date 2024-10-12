@@ -7,6 +7,7 @@ export type SanityCategory = {
 
 export type SanityPostMeta = {
   title: string;
+  previewText: string;
 };
 
 type SanityPostBase = {

@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   return {
     title: `${postMetadata?.title || 'Post Not Found'} ${SITE_BRAND_TITLE_ENDING}`,
+    description: `${postMetadata?.previewText || `Blog Publication on ${SITE_BRAND_TITLE_ENDING}`}`,
   };
 }
 
