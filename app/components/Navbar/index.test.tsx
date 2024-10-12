@@ -38,7 +38,7 @@ describe('Navbar Component', () => {
     expect(logo).toHaveAttribute('height', '50');
   });
 
-  it('should render navigation links in desktop view', () => {
+  it('should render navigation links', () => {
     render(<Navbar />);
     const navLinks = screen.getAllByRole('link');
     expect(navLinks).toHaveLength(9);
@@ -52,19 +52,16 @@ describe('Navbar Component', () => {
     expect(navLinks[2]).toHaveTextContent('About');
     expect(navLinks[2]).toHaveAttribute('href', '#');
 
-    expect(navLinks[3]).toHaveTextContent('Events');
+    expect(navLinks[3]).toHaveTextContent('Publications');
     expect(navLinks[3]).toHaveAttribute('href', '#');
 
     expect(navLinks[4]).toHaveTextContent('Contact');
     expect(navLinks[4]).toHaveAttribute('href', '#');
   });
 
-  it('should display the Feedback button on desktop view', () => {
+  it('should display the Feedback buttons', () => {
     render(<Navbar />);
-    const feedbackButton = screen.getByText('Feedback');
-    expect(feedbackButton).toBeInTheDocument();
-    expect(feedbackButton).toHaveClass(
-      'btn hidden bg-brand-pink text-stone-900 hover:bg-brand-light-pink md:flex',
-    );
+    const feedbackButton = screen.getAllByText('Feedback');
+    expect(feedbackButton).toHaveLength(2);
   });
 });

@@ -1,6 +1,6 @@
 function Pagination() {
   return (
-    <div className="join mx-auto mt-12 align-middle">
+    <div className="join mt-12 flex w-full justify-center">
       <button className="btn join-item btn-active bg-brand-pink text-stone-900 hover:bg-brand-light-pink">
         1
       </button>

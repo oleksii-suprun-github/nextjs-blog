@@ -36,7 +36,7 @@ function HeadlineWithDescription({
       <h1 className={clsx('mb-4 text-3xl font-bold text-gray-200', category && 'text-5xl')}>
         {headline}
       </h1>
-      <p className={clsx(category && 'text-xl')}>{description}</p>
+      <p className={clsx(category && 'text-xl text-gray-300')}>{description}</p>
     </div>
   );
 }

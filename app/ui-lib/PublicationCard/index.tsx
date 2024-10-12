@@ -17,12 +17,19 @@ function PublicationCard({
 
   return (
     <Link href={link}>
-      <div className="card image-full bg-base-100 shadow-xl">
+      <div className="card image-full bg-cover shadow-xl">
         <figure>
-          <Image width={400} height={200} src={image.url} alt={image.alt || title} />
+          <Image
+            width={400}
+            height={200}
+            src={image.url}
+            alt={image.alt || title}
+            placeholder="blur"
+            blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmHOiHgAD7QHlxT90/wAAAABJRU5ErkJggg=="
+          />
         </figure>
         <div className="card-body">
-          <span className="text-md">{creationDate}</span>
+          <span className="text-md text-slate-300">{creationDate}</span>
           <h2 className="card-title mb-4 text-stone-200">{title}</h2>
           <p className="text-stone-200">{previewText}</p>
           <div className="card-actions justify-end">

@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className="flex items-center justify-center px-10 pb-24 pt-24 text-stone-200">
       <div className="mx-auto max-w-screen-md">
-        <Image src="/logo.svg" alt="Logo" width={150} height={50} />
+        <Image src="/logo.svg" alt="Logo" width={150} height={50} priority />
         <h1 className="mb-6 break-normal text-4xl font-black leading-relaxed sm:text-6xl sm:leading-[1.25]">
           NextJS Newsletter Demo Project
         </h1>

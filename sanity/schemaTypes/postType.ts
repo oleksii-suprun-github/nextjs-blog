@@ -70,6 +70,7 @@ export const postType = defineType({
     defineField({
       name: 'publishedAt',
       type: 'datetime',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       validation: (Rule) => Rule.required(),

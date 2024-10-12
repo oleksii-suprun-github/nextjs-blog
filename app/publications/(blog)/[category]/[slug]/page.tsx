@@ -38,7 +38,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
   }).format(new Date(post.publishedAt));
 
   return (
-    <main className="bg-brand-dark-purple px-4 py-16 text-stone-200">
+    <section className="bg-brand-dark-purple px-4 py-16 text-stone-200">
       <section className="container mx-auto">
         <div className="mb-16">
           <Breadcrumbs />
@@ -52,6 +52,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
           <PortableText value={post.content} />
         </div>
       </section>
-    </main>
+    </section>
   );
 }

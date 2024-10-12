@@ -11,7 +11,7 @@ export default function PublicationsLayout({ children }: { children: React.React
   return (
     <>
       <Navbar />
-      <main className="flex-grow">{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );

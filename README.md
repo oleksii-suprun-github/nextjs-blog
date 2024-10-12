@@ -23,6 +23,9 @@ NextJS Newsletter Page is designed to provide a seamless experience for users to
 - **Zod**: TypeScript-first schema validation library.
 - **DaisyUI**: TailwindCSS component library for faster UI building.
 - **Styled-Components**: Allows writing CSS-in-JS for component styling.
+- **Sentry**: Error monitoring and performance tracking.
+- **PortableText**: Sanity Portable Text renderer for rich text content.
+- **React Icons**: A popular icon library for React projects.
 
 ## Table of Contents
 
@@ -86,13 +89,15 @@ NextJS Newsletter Page is designed to provide a seamless experience for users to
 
 ## Dependencies
 
-- `@heroicons/react`: ^2.1.5
+- `@portabletext/react`: ^3.1.0
 - `@sanity/client`: ^6.21.3
 - `@sanity/icons`: ^3.4.0
 - `@sanity/image-url`: 1
 - `@sanity/types`: ^3.57.4
 - `@sanity/ui`: ^2.8.9
 - `@sanity/vision`: 3
+- `@sentry/nextjs`: ^8
+- `@tailwindcss/typography`: ^0.5.15
 - `@typescript-eslint/eslint-plugin`: ^7.14.1
 - `@vercel/postgres`: ^0.10.0
 - `clsx`: ^2.1.1
@@ -102,6 +107,7 @@ NextJS Newsletter Page is designed to provide a seamless experience for users to
 - `react`: ^18.3.1
 - `react-dom`: ^18
 - `sanity`: ^3.57.4
+- `server-only`: ^0.0.1
 - `styled-components`: ^6.1
 - `use-debounce`: ^10.0.3
 - `zod`: ^3.23.8
@@ -136,6 +142,7 @@ NextJS Newsletter Page is designed to provide a seamless experience for users to
 - `postcss`: ^8
 - `prettier`: ^3.3.3
 - `prettier-plugin-tailwindcss`: ^0.6.8
+- `react-icons`: ^5.3.0
 - `tailwindcss`: ^3.4.1
 - `typescript`: ^5
 - `vite-tsconfig-paths`: ^4.3.2

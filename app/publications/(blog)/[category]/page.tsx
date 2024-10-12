@@ -7,6 +7,7 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 import { HeadlineWithDescription, PublicationsSection } from '@/app/ui-lib';
 import { SanityCategory, SanityPostPreview } from '@/app/types';
 import { SITE_BRAND_TITLE_ENDING } from '@/app/constants';
+import Pagination from '@/app/components/Pagination';
 
 export const revalidate = 60;
 
@@ -43,7 +44,7 @@ export default async function Page({ params }: { params: { category: string } })
   }
 
   return (
-    <main className="bg-brand-dark-purple px-4 py-16">
+    <section className="bg-brand-dark-purple px-4 py-16">
       <section className="container mx-auto mb-12">
         <Breadcrumbs />
       </section>
@@ -55,8 +56,9 @@ export default async function Page({ params }: { params: { category: string } })
             category
           />
           <PublicationsList items={posts} />
+          <Pagination />
         </PublicationsSection>
       </section>
-    </main>
+    </section>
   );
 }

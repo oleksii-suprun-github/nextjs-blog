@@ -8,7 +8,7 @@ function Breadcrumbs() {
   const breadcrumbs = pathname.split('/').slice(1);
 
   return (
-    <div className="breadcrumbs text-sm">
+    <div className="breadcrumbs text-sm text-gray-400">
       <ul>
         <li>
           <Link href="/">Home</Link>

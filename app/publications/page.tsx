@@ -31,7 +31,7 @@ export default async function LatestPublicationsPage() {
   });
 
   return (
-    <main className="bg-brand-dark-purple px-4 py-16">
+    <section className="bg-brand-dark-purple px-4 py-16">
       <section className="container mx-auto">
         <div className="mb-16">
           <Breadcrumbs />
@@ -64,6 +64,6 @@ export default async function LatestPublicationsPage() {
           <PublicationsList items={pastEventRecordings} />
         </PublicationsSection>
       </section>
-    </main>
+    </section>
   );
 }
