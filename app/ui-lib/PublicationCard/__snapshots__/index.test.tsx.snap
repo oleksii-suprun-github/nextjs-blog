@@ -18,8 +18,8 @@ exports[`PublicationCard Component > should render correctly and match snapshot 
           decoding="async"
           fetchpriority="high"
           height="400"
-          src="/_next/image?url=%2Fmock-image-url.jpg&w=828&q=60"
-          srcset="/_next/image?url=%2Fmock-image-url.jpg&w=640&q=60 1x, /_next/image?url=%2Fmock-image-url.jpg&w=828&q=60 2x"
+          src="/_next/image?url=%2Ftest-image.jpg&w=828&q=60"
+          srcset="/_next/image?url=%2Ftest-image.jpg&w=640&q=60 1x, /_next/image?url=%2Ftest-image.jpg&w=828&q=60 2x"
           style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
           width="400"
         />

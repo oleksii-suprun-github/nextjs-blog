@@ -75,6 +75,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               className="h-full w-full object-cover lg:h-auto lg:w-screen"
               placeholder="blur"
               blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmHOiHgAD7QHlxT90/wAAAABJRU5ErkJggg=="
+              sizes="(max-width: 768px) 100vw, 400px"
             />
           </figure>
 

@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { SanityPostPreview } from '@/app/types';
-import { urlFor } from '@/sanity/lib/image';
 
 function PublicationCard({
   title,
@@ -23,7 +22,7 @@ function PublicationCard({
           <Image
             width={400}
             height={400}
-            src={urlFor(image.url).width(400).url()}
+            src={image.url}
             alt={image.alt || title}
             quality={60}
             placeholder="blur"

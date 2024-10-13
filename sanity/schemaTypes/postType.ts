@@ -1,5 +1,6 @@
 import { DocumentTextIcon } from '@sanity/icons';
 import { defineArrayMember, defineField, defineType } from 'sanity';
+import { getImageDimensions, SanityImageSource } from '@sanity/asset-utils';
 
 export const postType = defineType({
   name: 'post',
@@ -23,7 +24,17 @@ export const postType = defineType({
     defineField({
       name: 'previewImage',
       type: 'image',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule) =>
+        Rule.required().custom((value) => {
+          const assetRef = value?.asset?._ref as SanityImageSource;
+          const { width, height } = getImageDimensions(assetRef);
+
+          if (width > 600 && height > 400) {
+            return 'Image must be maximum at 600x400px';
+          }
+
+          return true;
+        }),
       options: {
         hotspot: true,
       },

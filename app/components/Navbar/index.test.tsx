@@ -12,14 +12,6 @@ vi.mock('next/link', () => ({
   ),
 }));
 
-vi.mock('@/sanity/lib/image', () => ({
-  urlFor: () => ({
-    width: () => ({
-      url: () => '/mock-image-url.jpg',
-    }),
-  }),
-}));
-
 vi.mock('next/image', () => ({
   __esModule: true,
   default: (props: any) => {

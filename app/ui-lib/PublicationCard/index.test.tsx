@@ -1,16 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import PublicationCard from '.';
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { SanityPostPreview } from '@/app/types';
-
-// Mock the urlFor function from Sanity
-vi.mock('@/sanity/lib/image', () => ({
-  urlFor: () => ({
-    width: () => ({
-      url: () => '/mock-image-url.jpg',
-    }),
-  }),
-}));
 
 const mockPost: SanityPostPreview = {
   title: 'Test Title',
@@ -47,7 +38,7 @@ describe('PublicationCard Component', () => {
 
     const imageElement = screen.getByAltText('Test Image');
     expect(imageElement).toBeInTheDocument();
-    expect(imageElement).toHaveAttribute('src', expect.stringContaining('mock-image-url.jpg'));
+    expect(imageElement).toHaveAttribute('src', expect.stringContaining('test-image.jpg'));
     expect(imageElement).toHaveAttribute('width', '400');
     expect(imageElement).toHaveAttribute('height', '400');
   });
