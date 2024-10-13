@@ -18,17 +18,18 @@ function PublicationCard({
 
   return (
     <Link href={link}>
-      <div className="card image-full h-full bg-cover shadow-xl">
-        <figure>
+      <div className="card image-full shadow-xl">
+        <figure className="lxs-sm:h-[380px] sm:h-[470px] md:h-[420px]">
           <Image
             width={400}
-            height={200}
+            height={400}
             src={urlFor(image.url).width(400).url()}
             alt={image.alt || title}
             quality={60}
             placeholder="blur"
             blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmHOiHgAD7QHlxT90/wAAAABJRU5ErkJggg=="
             priority
+            className="h-full w-full object-cover"
           />
         </figure>
         <div className="card-body">

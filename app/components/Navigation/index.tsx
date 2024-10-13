@@ -22,7 +22,7 @@ const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAn
           className={
             isActiveLink(link.href)
               ? 'mb-5 text-2xl font-bold lg:mb-0 lg:mr-12 lg:text-base'
-              : 'mb-5 text-lg lg:mb-0 lg:mr-12 lg:text-base'
+              : 'mb-5 text-lg lg:mb-0 lg:mr-12'
           }
           key={link.uid}
           href={link.href}

@@ -56,7 +56,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               <p className="mb-5">
                 <em>Published {creationDate}</em>
               </p>
-              <h1 className="mb-10 max-w-2xl text-4xl leading-normal lg:text-5xl lg:leading-normal">
+              <h1 className="mb-10 max-w-2xl text-4xl font-bold leading-normal lg:text-5xl lg:leading-normal">
                 {post.title}
               </h1>
               <p className="mb-24 max-w-lg text-xl leading-normal lg:mb-32 lg:leading-relaxed">
