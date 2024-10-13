@@ -1,5 +1,5 @@
 import { sanityFetch } from '@/sanity/lib/fetch';
-import { getPostsQuery } from '@/sanity/lib/queries';
+import { getLatestPostsQuery } from '@/sanity/lib/queries';
 import Breadcrumbs from '../components/Breadcrumbs';
 import PublicationsList from '../components/PublicationsList';
 import Footer from '../components/Footer';
@@ -23,13 +23,13 @@ export const revalidate = 3600;
 
 export default async function LatestPublicationsPage() {
   const publications = await sanityFetch<SanityPostPreview[]>({
-    query: getPostsQuery('blog'),
+    query: getLatestPostsQuery('blog'),
   });
   const upcomingEvents = await sanityFetch<SanityPostPreview[]>({
-    query: getPostsQuery('upcoming-events'),
+    query: getLatestPostsQuery('upcoming-events'),
   });
   const pastEventRecordings = await sanityFetch<SanityPostPreview[]>({
-    query: getPostsQuery('past-event-recordings'),
+    query: getLatestPostsQuery('past-event-recordings'),
   });
 
   return (

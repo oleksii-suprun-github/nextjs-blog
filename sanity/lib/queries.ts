@@ -2,10 +2,11 @@ import { groq } from 'next-sanity';
 
 export const categoryQuery = groq`*[_type == "category" && slug.current == $category] {
   title,
-  description
+  description,
+  "totalPosts": count(*[_type == "post" && $category in categories[]->slug.current])
 }[0]`;
 
-export const getPostsQuery = (category: string, limit: number = 3) =>
+export const getLatestPostsQuery = (category: string, limit: number = 3) =>
   groq`*[_type == "post" && "${category}" in categories[]->slug.current] | order(publishedAt desc) [0...${limit}] {
     title,
     "category": categories[0]->{
@@ -21,20 +22,21 @@ export const getPostsQuery = (category: string, limit: number = 3) =>
     publishedAt
 }`;
 
-export const categoryPostsQuery = groq`*[_type == "post" && $category in categories[]->slug.current] | order(publishedAt desc) [0...6] {
-  title,
-  "category": categories[0]->{
+export const getCategoryPostsPaginatedQuery = (category: string, start: number, limit: number) =>
+  groq`*[_type == "post" && "${category}" in categories[]->slug.current] | order(publishedAt desc) [${start}...${start + limit}] {
     title,
-    "url": slug.current
-  },
-  "slug": slug.current,
-  previewText,
-  "image": {
+    "category": categories[0]->{
+      title,
+      "url": slug.current
+    },
+    "slug": slug.current,
+    previewText,
+    "image": {
       "url": previewImage.asset->url,
       "alt": previewImage.alt
-  },
-  publishedAt
-}`;
+    },
+    publishedAt
+  }`;
 
 export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{ 
     title,

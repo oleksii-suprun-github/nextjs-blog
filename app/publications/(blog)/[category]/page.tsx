@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import { sanityFetch } from '@/sanity/lib/fetch';
-import { postPathsQuery, categoryQuery, categoryPostsQuery } from '@/sanity/lib/queries';
-import { client } from '@/sanity/lib/client';
+import { categoryQuery, getCategoryPostsPaginatedQuery } from '@/sanity/lib/queries';
 import PublicationsList from '@/app/components/PublicationsList';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 import Pagination from '@/app/components/Pagination';
@@ -25,19 +24,24 @@ export async function generateMetadata({ params }: { params: { category: string 
   };
 }
 
-export async function generateStaticParams() {
-  const posts = await client.fetch(postPathsQuery);
-  return posts;
-}
+export default async function Page({
+  params,
+  searchParams,
+}: {
+  params: { category: string };
+  searchParams: { page?: string };
+}) {
+  const page = parseInt(searchParams.page || '1', 10);
+  const limit = 6;
+  const start = (page - 1) * limit;
 
-export default async function Page({ params }: { params: { category: string } }) {
   const categoryMetadata = await sanityFetch<SanityCategory>({
     query: categoryQuery,
     params,
   });
 
   const posts = await sanityFetch<SanityPostPreview[]>({
-    query: categoryPostsQuery,
+    query: getCategoryPostsPaginatedQuery(params.category, start, limit),
     params,
   });
 
@@ -49,7 +53,6 @@ export default async function Page({ params }: { params: { category: string } })
     <>
       <Navbar />
       <main>
-        {' '}
         <section className="bg-brand-dark-purple px-4 py-16">
           <section className="container mx-auto mb-12">
             <Breadcrumbs />
@@ -62,7 +65,14 @@ export default async function Page({ params }: { params: { category: string } })
                 category
               />
               <PublicationsList items={posts} />
-              <Pagination />
+              {categoryMetadata.totalPosts > 1 && (
+                <Pagination
+                  currentPage={page}
+                  totalPosts={categoryMetadata.totalPosts}
+                  postsPerPage={limit}
+                  category={params.category}
+                />
+              )}
             </PublicationsSection>
           </section>
         </section>

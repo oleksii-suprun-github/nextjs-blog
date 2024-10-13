@@ -3,6 +3,7 @@ import { TypedObject } from '@sanity/types';
 export type SanityCategory = {
   title?: string;
   description?: string;
+  totalPosts: any;
 };
 
 export type SanityPostMeta = {
