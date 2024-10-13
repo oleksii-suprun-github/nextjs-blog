@@ -1,0 +1,58 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PublicationCard Component > should render correctly and match snapshot 1`] = `
+<DocumentFragment>
+  <a
+    href="/publications/test-category/test-slug"
+  >
+    <div
+      class="card image-full shadow-xl"
+    >
+      <figure
+        class="sm:h-[470px] lxs-sm:h-[380px] md:h-[420px]"
+      >
+        <img
+          alt="Test Image"
+          class="h-full w-full object-cover"
+          data-nimg="1"
+          decoding="async"
+          fetchpriority="high"
+          height="400"
+          src="/_next/image?url=%2Fmock-image-url.jpg&w=828&q=60"
+          srcset="/_next/image?url=%2Fmock-image-url.jpg&w=640&q=60 1x, /_next/image?url=%2Fmock-image-url.jpg&w=828&q=60 2x"
+          style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+          width="400"
+        />
+      </figure>
+      <div
+        class="card-body"
+      >
+        <span
+          class="text-md text-slate-300"
+        >
+          12 October 2024
+        </span>
+        <h2
+          class="card-title mb-4 text-stone-200"
+        >
+          Test Title
+        </h2>
+        <p
+          class="text-stone-200"
+        >
+          This is a preview of the post.
+        </p>
+        <div
+          class="card-actions justify-end"
+        >
+          <button
+            class="btn no-animation btn-sm bg-brand-dark-purple text-gray-300 hover:bg-brand-purple"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+    </div>
+  </a>
+</DocumentFragment>
+`;

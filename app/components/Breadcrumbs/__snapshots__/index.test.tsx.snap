@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Breadcrumbs Component > should render correctly and match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="breadcrumbs text-sm text-gray-200"
+  >
+    <ul>
+      <li>
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about"
+        >
+          About
+        </a>
+      </li>
+      <li>
+        Team
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

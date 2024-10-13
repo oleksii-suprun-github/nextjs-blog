@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PublicationsSection Component > should render correctly and match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="mb-24"
+  >
+    <div>
+      Sample Content For Test
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,47 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HeadlineWithDescription Component > should render correctly with link and match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="mb-12 flex flex-col items-start justify-between md:flex-row md:items-center"
+  >
+    <div>
+      <h1
+        class="mb-4 text-3xl font-bold text-gray-200"
+      >
+        Test Headline
+      </h1>
+      <p
+        class="text-gray-300"
+      >
+        Test Description
+      </p>
+    </div>
+    <a
+      class="btn no-animation mt-6 bg-brand-purple text-gray-300 hover:bg-brand-purple md:mt-0"
+      href="/test-link"
+    >
+      Go to category
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`HeadlineWithDescription Component > should render correctly without link and match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="mb-12"
+  >
+    <h1
+      class="mb-8 text-3xl font-bold text-gray-200"
+    >
+      Test Headline
+    </h1>
+    <p
+      class=""
+    >
+      Test Description
+    </p>
+  </div>
+</DocumentFragment>
+`;
