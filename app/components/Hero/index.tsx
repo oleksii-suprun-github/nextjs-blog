@@ -17,7 +17,7 @@ function Hero() {
         </p>
         <div>
           <Link href={href}>
-            <button className="btn btn-lg mb-5 border-0 bg-brand-pink text-gray-900 hover:bg-brand-light-pink">
+            <button className="btn no-animation btn-lg mb-5 border-0 bg-brand-pink text-gray-900 hover:bg-brand-light-pink">
               Get Started
             </button>
           </Link>

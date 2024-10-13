@@ -22,7 +22,7 @@ function HeadlineWithDescription({
           <p className={clsx('text-gray-300', category && 'text-xl')}>{description}</p>
         </div>
         <Link
-          className="btn mt-6 bg-brand-purple text-gray-300 hover:bg-brand-purple md:mt-0"
+          className="btn no-animation mt-6 bg-brand-purple text-gray-300 hover:bg-brand-purple md:mt-0"
           href={link}
         >
           Go to category

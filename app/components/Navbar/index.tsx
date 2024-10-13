@@ -48,7 +48,7 @@ const Navbar = ({ transparent }: { transparent?: boolean }) => {
                 <Navigation onClick={drawerToggleHandler} />
                 <a
                   onClick={feedbackFormRefHandler}
-                  className="btn mx-auto w-2/3 border-0 bg-brand-pink text-stone-900 hover:bg-brand-light-pink"
+                  className="btn no-animation mx-auto w-2/3 border-0 bg-brand-pink text-stone-900 hover:bg-brand-light-pink"
                 >
                   Leave a Feedback
                 </a>
@@ -56,7 +56,7 @@ const Navbar = ({ transparent }: { transparent?: boolean }) => {
             </div>
             <a
               onClick={feedbackFormRefHandler}
-              className="btn hidden border-0 bg-brand-pink text-stone-900 hover:bg-brand-light-pink lg:flex"
+              className="btn no-animation hidden border-0 bg-brand-pink text-stone-900 hover:bg-brand-light-pink lg:flex"
             >
               Leave a Feedback
             </a>

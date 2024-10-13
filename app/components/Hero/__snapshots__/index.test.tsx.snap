@@ -29,7 +29,7 @@ exports[`Hero Component > should render correctly and match snapshot 1`] = `
           href="/publications"
         >
           <button
-            class="btn btn-lg mb-5 border-0 bg-brand-pink text-gray-900 hover:bg-brand-light-pink"
+            class="btn no-animation btn-lg mb-5 border-0 bg-brand-pink text-gray-900 hover:bg-brand-light-pink"
           >
             Get Started
           </button>

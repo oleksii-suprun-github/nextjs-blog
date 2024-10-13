@@ -19,7 +19,7 @@ function PublicationCard({
   return (
     <Link href={link}>
       <div className="card image-full shadow-xl">
-        <figure className="lxs-sm:h-[380px] sm:h-[470px] md:h-[420px]">
+        <figure className="sm:h-[470px] lxs-sm:h-[380px] md:h-[420px]">
           <Image
             width={400}
             height={400}
@@ -37,7 +37,7 @@ function PublicationCard({
           <h2 className="card-title mb-4 text-stone-200">{title}</h2>
           <p className="text-stone-200">{previewText}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-sm bg-brand-dark-purple text-gray-300 hover:bg-brand-purple">
+            <button className="btn no-animation btn-sm bg-brand-dark-purple text-gray-300 hover:bg-brand-purple">
               Read More
             </button>
           </div>
