@@ -1,4 +1,4 @@
-export const SITE_BRAND_TITLE_ENDING = '| Agora Energiewende';
+export const SITE_BRAND_TITLE_ENDING = '| Sample Blog';
 
 export const BLOG_URL = '/publications/blog';
 
