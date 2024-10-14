@@ -2,7 +2,6 @@
 
 import { useRef } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { FiMenu } from 'react-icons/fi';
 import Navigation from '../Navigation';
 import { Drawer, Modal } from '@/app/ui-lib';
@@ -35,8 +34,8 @@ const Navbar = ({ transparent }: { transparent?: boolean }) => {
       >
         <div className="container mx-auto">
           <div className="navbar-start">
-            <Link href="/">
-              <Image src="/logo.svg" alt="Logo" width={150} height={50} priority />
+            <Link className="flex text-xl font-bold text-stone-300" href="/">
+              Sample Logo ©
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">

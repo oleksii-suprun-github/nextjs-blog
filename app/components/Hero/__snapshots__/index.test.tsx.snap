@@ -8,16 +8,15 @@ exports[`Hero Component > should render correctly and match snapshot 1`] = `
     <div
       class="mx-auto max-w-screen-md"
     >
-      <img
-        alt="Logo"
-        height="50"
-        src="/logo.svg"
-        width="150"
-      />
+      <span
+        class="mb-4 flex text-5xl font-bold text-gray-200"
+      >
+        Sample Logo ©
+      </span>
       <h1
         class="mb-6 break-normal text-4xl font-black leading-relaxed sm:text-6xl sm:leading-[1.25]"
       >
-        NextJS Newsletter Demo Project
+        NextJS Blog Demo Project
       </h1>
       <p
         class="mb-8 text-xl leading-relaxed text-stone-200 sm:text-2xl sm:leading-[1.65]"
