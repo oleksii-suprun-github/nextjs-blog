@@ -1,0 +1,23 @@
+name: GitHub Actions Create Pull Request to Staging
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: sync dev to staging'
+          branch: staging
+          title: 'Merge dev into staging'
+          body: 'Automated PR to merge dev into staging for preview deployment.'
+          delete-branch: false
