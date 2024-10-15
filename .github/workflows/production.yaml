@@ -27,23 +27,23 @@ jobs:
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
 
-      - name: Merge dev into release
+      - name: Merge dev into realise
         run: |
-          git checkout release
-          git merge --no-ff dev -m "Merge dev into release [skip ci]"
+          git checkout realise
+          git merge --no-ff dev -m "Merge dev into realise [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push changes to release branch
+      - name: Push changes to realise branch
         run: |
-          git push origin release
+          git push origin realise
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Checkout release branch
+      - name: Checkout realise branch
         uses: actions/checkout@v4
         with:
-          ref: release
+          ref: realise
           fetch-depth: 0
 
       - name: Set up Node.js
