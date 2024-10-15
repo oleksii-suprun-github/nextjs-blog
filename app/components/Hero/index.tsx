@@ -11,8 +11,8 @@ function Hero() {
           NextJS Blog Demo Project
         </h1>
         <p className="mb-8 text-xl leading-relaxed text-stone-200 sm:text-2xl sm:leading-[1.65]">
-          This demo application, built with NextJS, TypeScript & Tailwind allows users to check
-          latest company`s news and events.
+          This demo application, built with NextJS, TypeScript, Tailwind & Sanity allows users to
+          check blog posts.
         </p>
         <div>
           <Link href={href}>

@@ -10,9 +10,8 @@ const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAn
 
   const navigationLinks = [
     { uid: 'home', label: 'Home', href: '/' },
-    { uid: 'about', label: 'About', href: '#' },
-    { uid: 'publications', label: 'Publications', href: '#' },
-    { uid: 'contact', label: 'Contact', href: '#' },
+    { uid: 'about', label: 'About', href: '/about' },
+    { uid: 'publications', label: 'Publications', href: '/publications' },
   ];
 
   return (

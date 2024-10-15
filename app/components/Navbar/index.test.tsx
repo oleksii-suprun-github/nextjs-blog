@@ -32,7 +32,7 @@ describe('Navbar Component', () => {
   it('should render navigation links', () => {
     render(<Navbar />);
     const navLinks = screen.getAllByRole('link');
-    expect(navLinks).toHaveLength(9);
+    expect(navLinks).toHaveLength(7);
 
     expect(navLinks[0]).toHaveTextContent('Sample Logo ©');
     expect(navLinks[0]).toHaveAttribute('href', '/');
@@ -41,13 +41,10 @@ describe('Navbar Component', () => {
     expect(navLinks[1]).toHaveAttribute('href', '/');
 
     expect(navLinks[2]).toHaveTextContent('About');
-    expect(navLinks[2]).toHaveAttribute('href', '#');
+    expect(navLinks[2]).toHaveAttribute('href', '/about');
 
     expect(navLinks[3]).toHaveTextContent('Publications');
-    expect(navLinks[3]).toHaveAttribute('href', '#');
-
-    expect(navLinks[4]).toHaveTextContent('Contact');
-    expect(navLinks[4]).toHaveAttribute('href', '#');
+    expect(navLinks[3]).toHaveAttribute('href', '/publications');
   });
 
   it('should display the Feedback buttons', () => {
