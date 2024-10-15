@@ -11,7 +11,7 @@ exports[`Hero Component > should render correctly and match snapshot 1`] = `
       <span
         class="mb-4 flex text-5xl font-bold text-gray-200"
       >
-        Sample Logo ©
+        NextJS Blog ©
       </span>
       <h1
         class="mb-6 break-normal text-4xl font-black leading-relaxed sm:text-6xl sm:leading-[1.25]"

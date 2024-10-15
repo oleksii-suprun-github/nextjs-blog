@@ -10,21 +10,27 @@ exports[`Footer Component > should render correctly and match snapshot 1`] = `
     >
       <a
         class="link-hover link"
-        href="#"
+        href="/about"
       >
-        About us
+        About me
       </a>
       <a
         class="link-hover link"
-        href="#"
+        href="/publications/nextjs"
       >
-        Contact
+        NextJS topics
       </a>
       <a
         class="link-hover link"
-        href="#"
+        href="/publications/nodejs"
       >
-        Jobs
+        NodeJS topics
+      </a>
+      <a
+        class="link-hover link"
+        href="/publications/python"
+      >
+        Python topics
       </a>
     </nav>
     <nav>
@@ -34,7 +40,7 @@ exports[`Footer Component > should render correctly and match snapshot 1`] = `
         <a
           href="#"
           target="_blank"
-          title="We are on X"
+          title="Follow me on X"
         >
           <svg
             class="fill-current"
@@ -51,7 +57,7 @@ exports[`Footer Component > should render correctly and match snapshot 1`] = `
         <a
           href="#"
           target="_blank"
-          title="We are on YouTube"
+          title="Follow on YouTube"
         >
           <svg
             class="fill-current"
@@ -68,7 +74,7 @@ exports[`Footer Component > should render correctly and match snapshot 1`] = `
         <a
           href="#"
           target="_blank"
-          title="We are on Facebook"
+          title="Follow on Facebook"
         >
           <svg
             class="fill-current"

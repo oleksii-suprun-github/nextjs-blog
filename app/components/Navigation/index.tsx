@@ -1,8 +1,9 @@
 'use client';
 
+import { MouseEventHandler } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { MouseEventHandler } from 'react';
+import clsx from 'clsx';
 
 const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAnchorElement> }) => {
   const path = usePathname();
@@ -18,11 +19,10 @@ const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAn
     <div className="mb-12 mt-16 flex flex-col items-center lg:mb-0 lg:mt-0 lg:flex-row lg:items-start">
       {navigationLinks.map((link) => (
         <Link
-          className={
-            isActiveLink(link.href)
-              ? 'mb-5 text-2xl font-bold lg:mb-0 lg:mr-12 lg:text-base'
-              : 'mb-5 text-lg lg:mb-0 lg:mr-12'
-          }
+          className={clsx(
+            'mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg',
+            isActiveLink(link.href) && 'font-bold',
+          )}
           key={link.uid}
           href={link.href}
           onClick={onClick}

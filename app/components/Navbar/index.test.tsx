@@ -34,7 +34,7 @@ describe('Navbar Component', () => {
     const navLinks = screen.getAllByRole('link');
     expect(navLinks).toHaveLength(7);
 
-    expect(navLinks[0]).toHaveTextContent('Sample Logo ©');
+    expect(navLinks[0]).toHaveTextContent('NextJS Blog ©');
     expect(navLinks[0]).toHaveAttribute('href', '/');
 
     expect(navLinks[1]).toHaveTextContent('Home');

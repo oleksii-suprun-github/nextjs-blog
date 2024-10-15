@@ -6,7 +6,7 @@ exports[`Navigation Component > renders correctly when journal link is active 1`
     class="mb-12 mt-16 flex flex-col items-center lg:mb-0 lg:mt-0 lg:flex-row lg:items-start"
   >
     <a
-      class="mb-5 text-lg lg:mb-0 lg:mr-12"
+      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
       href="/"
     >
       <span
@@ -16,7 +16,7 @@ exports[`Navigation Component > renders correctly when journal link is active 1`
       </span>
     </a>
     <a
-      class="mb-5 text-lg lg:mb-0 lg:mr-12"
+      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
       href="/about"
     >
       <span
@@ -26,7 +26,7 @@ exports[`Navigation Component > renders correctly when journal link is active 1`
       </span>
     </a>
     <a
-      class="mb-5 text-lg lg:mb-0 lg:mr-12"
+      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
       href="/publications"
     >
       <span
@@ -45,7 +45,7 @@ exports[`Navigation Component > renders correctly when no link is active 1`] = `
     class="mb-12 mt-16 flex flex-col items-center lg:mb-0 lg:mt-0 lg:flex-row lg:items-start"
   >
     <a
-      class="mb-5 text-2xl font-bold lg:mb-0 lg:mr-12 lg:text-base"
+      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg font-bold"
       href="/"
     >
       <span
@@ -55,7 +55,7 @@ exports[`Navigation Component > renders correctly when no link is active 1`] = `
       </span>
     </a>
     <a
-      class="mb-5 text-lg lg:mb-0 lg:mr-12"
+      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
       href="/about"
     >
       <span
@@ -65,7 +65,7 @@ exports[`Navigation Component > renders correctly when no link is active 1`] = `
       </span>
     </a>
     <a
-      class="mb-5 text-lg lg:mb-0 lg:mr-12"
+      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
       href="/publications"
     >
       <span
@@ -84,7 +84,7 @@ exports[`Navigation Component > renders correctly when statistics link is active
     class="mb-12 mt-16 flex flex-col items-center lg:mb-0 lg:mt-0 lg:flex-row lg:items-start"
   >
     <a
-      class="mb-5 text-lg lg:mb-0 lg:mr-12"
+      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
       href="/"
     >
       <span
@@ -94,7 +94,7 @@ exports[`Navigation Component > renders correctly when statistics link is active
       </span>
     </a>
     <a
-      class="mb-5 text-lg lg:mb-0 lg:mr-12"
+      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
       href="/about"
     >
       <span
@@ -104,7 +104,7 @@ exports[`Navigation Component > renders correctly when statistics link is active
       </span>
     </a>
     <a
-      class="mb-5 text-lg lg:mb-0 lg:mr-12"
+      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
       href="/publications"
     >
       <span
