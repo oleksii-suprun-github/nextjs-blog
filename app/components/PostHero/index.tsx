@@ -15,7 +15,7 @@ function PostHero({ creationDate, title, introduction, image }: PostHeroType) {
   return (
     <>
       <header className="px-4">
-        <div className="container mx-auto">
+        <div className="container">
           <div className="mb-16">
             <Breadcrumbs />
           </div>
@@ -30,7 +30,7 @@ function PostHero({ creationDate, title, introduction, image }: PostHeroType) {
           </p>
         </div>
       </header>
-      <figure className="absolute left-0 top-0 -z-10 h-[150vh] w-full overflow-hidden after:absolute after:inset-0 after:h-full after:bg-brand-dark-purple after:bg-opacity-70 after:content-['']">
+      <figure className="absolute left-0 top-0 -z-10 h-[150vh] w-full overflow-hidden after:absolute after:inset-0 after:h-full after:bg-brand-dark-purple after:bg-opacity-85 after:content-['']">
         <Image
           src={image.url}
           alt={image.alt || title}

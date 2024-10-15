@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PostHero Component > renders correctly and matches the snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="px-4"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="mb-16"
+      >
+        <nav
+          aria-label="breadcrumb"
+        >
+          Breadcrumbs
+        </nav>
+      </div>
+      <p
+        class="mb-5"
+      >
+        <em>
+          Published April 27, 2024
+        </em>
+      </p>
+      <h1
+        class="mb-10 max-w-2xl text-4xl font-bold leading-normal lg:text-5xl lg:leading-normal"
+      >
+        Understanding React Testing
+      </h1>
+      <p
+        class="mb-24 max-w-lg text-xl leading-normal lg:mb-32 lg:leading-relaxed"
+      >
+        This post delves into the best practices for testing React components using modern tools.
+      </p>
+    </div>
+  </header>
+  <figure
+    class="absolute left-0 top-0 -z-10 h-[150vh] w-full overflow-hidden after:absolute after:inset-0 after:h-full after:bg-brand-dark-purple after:bg-opacity-85 after:content-['']"
+  >
+    <img
+      alt="mock image"
+      blurdataurl="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmHOiHgAD7QHlxT90/wAAAABJRU5ErkJggg=="
+      class="h-full w-full object-cover lg:h-auto lg:w-screen"
+      height="1080"
+      placeholder="blur"
+      quality="60"
+      sizes="(max-width: 768px) 100vw, 400px"
+      src="/images/mock-image.png"
+      width="1920"
+    />
+  </figure>
+</DocumentFragment>
+`;

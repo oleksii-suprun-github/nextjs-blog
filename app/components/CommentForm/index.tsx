@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { FeedbackFormData } from '@/app/types';
+import { CommentFormData } from '@/app/types';
 import { formSchema } from '@/app/formSchema';
 import { Form, FormInput } from '@/app/ui-lib';
 
@@ -15,12 +15,12 @@ export default function CommentForm() {
     handleSubmit,
     reset,
     formState: { errors, isValid },
-  } = useForm<FeedbackFormData>({
+  } = useForm<CommentFormData>({
     resolver: zodResolver(formSchema),
     mode: 'onChange',
   });
 
-  const onSubmit = (_data: FeedbackFormData) => {
+  const onSubmit = (_data: CommentFormData) => {
     reset();
     setIsSubmitted(true);
   };
@@ -36,7 +36,7 @@ export default function CommentForm() {
           errors={errors}
         />
         <button
-          className="btn ml-auto mt-4 bg-brand-pink text-stone-900 hover:bg-brand-light-pink"
+          className="btn ml-auto bg-brand-pink text-stone-900 hover:bg-brand-light-pink"
           type="submit"
           disabled={!isValid}
         >

@@ -3,6 +3,9 @@ import type { Config } from 'tailwindcss';
 const config: Config = {
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    container: {
+      center: true,
+    },
     screens: {
       xs: '320px',
       sm: '601px',
