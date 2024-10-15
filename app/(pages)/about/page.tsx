@@ -9,7 +9,7 @@ export const metadata = {
 function About() {
   return (
     <div className="px-4">
-      <div className="container mx-auto py-20">
+      <div className="container py-20">
         <h1 className="mb-16 text-5xl font-semibold">About Me</h1>
         <div className="mb-20 flex flex-col gap-16 md:flex-row lg:items-center">
           <div className="w-full md:w-1/3">

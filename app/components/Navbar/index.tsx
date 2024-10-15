@@ -32,7 +32,7 @@ const Navbar = ({ transparent }: { transparent?: boolean }) => {
           transparent ? 'bg-transparent' : 'bg-brand-purple',
         )}
       >
-        <div className="container mx-auto">
+        <div className="container">
           <div className="navbar-start">
             <Link className="flex text-xl font-bold" href="/">
               NextJS Blog ©

@@ -54,10 +54,10 @@ export default async function Page({
       <Navbar />
       <main>
         <section className="bg-brand-dark-purple px-4 py-16">
-          <section className="container mx-auto mb-12">
+          <section className="container mb-12">
             <Breadcrumbs />
           </section>
-          <section className="container mx-auto">
+          <section className="container">
             <PublicationsSection>
               <HeadlineWithDescription
                 headline={categoryMetadata.title as string}

@@ -39,3 +39,7 @@ export type FeedbackFormData = {
   email: string;
   message: string;
 };
+
+export type CommentFormData = {
+  comment: string;
+};

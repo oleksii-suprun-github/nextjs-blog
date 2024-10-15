@@ -1,4 +1,4 @@
-import Hero from './components/Hero';
+import HomepageHero from './components/HomepageHero';
 
 export const metadata = {
   title: 'NextJS Blog Demo Project',
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function HomePage() {
-  return <Hero />;
+  return <HomepageHero />;
 }

@@ -6,7 +6,7 @@ exports[`Navigation Component > should render correctly and match snapshot 1`] =
     class="navbar px-4 pb-20 pt-12 bg-brand-purple"
   >
     <div
-      class="container mx-auto"
+      class="container"
     >
       <div
         class="navbar-start"
