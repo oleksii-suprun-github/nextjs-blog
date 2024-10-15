@@ -5,36 +5,75 @@ exports[`Navigation Component > renders correctly when journal link is active 1`
   <div
     class="mb-12 mt-16 flex flex-col items-center lg:mb-0 lg:mt-0 lg:flex-row lg:items-start"
   >
-    <a
-      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
-      href="/"
+    <ul
+      class="menu menu-vertical lg:menu-horizontal"
     >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        Home
-      </span>
-    </a>
-    <a
-      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
-      href="/about"
-    >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        About
-      </span>
-    </a>
-    <a
-      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
-      href="/publications"
-    >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        Publications
-      </span>
-    </a>
+      <li>
+        <a
+          class="mb-5 text-xl lg:mb-0 lg:mr-8 lg:text-lg"
+          href="/"
+        >
+          <span
+            class="text-stone-300 hover:text-stone-100"
+          >
+            Home
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="mb-5 text-xl lg:mb-0 lg:mr-8 lg:text-lg"
+          href="/about"
+        >
+          <span
+            class="text-stone-300 hover:text-stone-100"
+          >
+            About
+          </span>
+        </a>
+      </li>
+      <li>
+        <details>
+          <summary
+            class="mb-5 text-xl text-stone-300 hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
+          >
+            Publications
+          </summary>
+          <ul
+            class="rounded-t-none bg-brand-dark-purple p-2"
+          >
+            <li>
+              <a
+                href="/publications"
+              >
+                All Publications
+              </a>
+            </li>
+            <li>
+              <a
+                href="/publications/nextjs"
+              >
+                NextJS
+              </a>
+            </li>
+            <li>
+              <a
+                href="/publications/nodejs"
+              >
+                NodeJS
+              </a>
+            </li>
+            <li>
+              <a
+                href="/publications/python"
+              >
+                Python
+              </a>
+            </li>
+          </ul>
+        </details>
+      </li>
+    </ul>
   </div>
 </div>
 `;
@@ -44,36 +83,75 @@ exports[`Navigation Component > renders correctly when no link is active 1`] = `
   <div
     class="mb-12 mt-16 flex flex-col items-center lg:mb-0 lg:mt-0 lg:flex-row lg:items-start"
   >
-    <a
-      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg font-bold"
-      href="/"
+    <ul
+      class="menu menu-vertical lg:menu-horizontal"
     >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        Home
-      </span>
-    </a>
-    <a
-      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
-      href="/about"
-    >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        About
-      </span>
-    </a>
-    <a
-      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
-      href="/publications"
-    >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        Publications
-      </span>
-    </a>
+      <li>
+        <a
+          class="mb-5 text-xl lg:mb-0 lg:mr-8 lg:text-lg font-bold"
+          href="/"
+        >
+          <span
+            class="text-stone-300 hover:text-stone-100"
+          >
+            Home
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="mb-5 text-xl lg:mb-0 lg:mr-8 lg:text-lg"
+          href="/about"
+        >
+          <span
+            class="text-stone-300 hover:text-stone-100"
+          >
+            About
+          </span>
+        </a>
+      </li>
+      <li>
+        <details>
+          <summary
+            class="mb-5 text-xl text-stone-300 hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
+          >
+            Publications
+          </summary>
+          <ul
+            class="rounded-t-none bg-brand-dark-purple p-2"
+          >
+            <li>
+              <a
+                href="/publications"
+              >
+                All Publications
+              </a>
+            </li>
+            <li>
+              <a
+                href="/publications/nextjs"
+              >
+                NextJS
+              </a>
+            </li>
+            <li>
+              <a
+                href="/publications/nodejs"
+              >
+                NodeJS
+              </a>
+            </li>
+            <li>
+              <a
+                href="/publications/python"
+              >
+                Python
+              </a>
+            </li>
+          </ul>
+        </details>
+      </li>
+    </ul>
   </div>
 </div>
 `;
@@ -83,36 +161,75 @@ exports[`Navigation Component > renders correctly when statistics link is active
   <div
     class="mb-12 mt-16 flex flex-col items-center lg:mb-0 lg:mt-0 lg:flex-row lg:items-start"
   >
-    <a
-      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
-      href="/"
+    <ul
+      class="menu menu-vertical lg:menu-horizontal"
     >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        Home
-      </span>
-    </a>
-    <a
-      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
-      href="/about"
-    >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        About
-      </span>
-    </a>
-    <a
-      class="mb-5 text-xl lg:mb-0 lg:mr-12 lg:text-lg"
-      href="/publications"
-    >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        Publications
-      </span>
-    </a>
+      <li>
+        <a
+          class="mb-5 text-xl lg:mb-0 lg:mr-8 lg:text-lg"
+          href="/"
+        >
+          <span
+            class="text-stone-300 hover:text-stone-100"
+          >
+            Home
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="mb-5 text-xl lg:mb-0 lg:mr-8 lg:text-lg"
+          href="/about"
+        >
+          <span
+            class="text-stone-300 hover:text-stone-100"
+          >
+            About
+          </span>
+        </a>
+      </li>
+      <li>
+        <details>
+          <summary
+            class="mb-5 text-xl text-stone-300 hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
+          >
+            Publications
+          </summary>
+          <ul
+            class="rounded-t-none bg-brand-dark-purple p-2"
+          >
+            <li>
+              <a
+                href="/publications"
+              >
+                All Publications
+              </a>
+            </li>
+            <li>
+              <a
+                href="/publications/nextjs"
+              >
+                NextJS
+              </a>
+            </li>
+            <li>
+              <a
+                href="/publications/nodejs"
+              >
+                NodeJS
+              </a>
+            </li>
+            <li>
+              <a
+                href="/publications/python"
+              >
+                Python
+              </a>
+            </li>
+          </ul>
+        </details>
+      </li>
+    </ul>
   </div>
 </div>
 `;
