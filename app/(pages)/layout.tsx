@@ -5,7 +5,7 @@ export default function PublicationsLayout({ children }: { children: React.React
   return (
     <>
       <Navbar />
-      <main className="h-screen bg-brand-dark-purple">{children}</main>
+      <main className="min-h-screen bg-brand-dark-purple">{children}</main>
       <Footer />
     </>
   );
