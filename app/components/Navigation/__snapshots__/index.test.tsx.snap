@@ -35,16 +35,6 @@ exports[`Navigation Component > renders correctly when journal link is active 1`
         Publications
       </span>
     </a>
-    <a
-      class="mb-5 text-lg lg:mb-0 lg:mr-12"
-      href="#"
-    >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        Contact
-      </span>
-    </a>
   </div>
 </div>
 `;
@@ -84,16 +74,6 @@ exports[`Navigation Component > renders correctly when no link is active 1`] = `
         Publications
       </span>
     </a>
-    <a
-      class="mb-5 text-lg lg:mb-0 lg:mr-12"
-      href="#"
-    >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        Contact
-      </span>
-    </a>
   </div>
 </div>
 `;
@@ -131,16 +111,6 @@ exports[`Navigation Component > renders correctly when statistics link is active
         class="text-stone-300 hover:text-stone-100"
       >
         Publications
-      </span>
-    </a>
-    <a
-      class="mb-5 text-lg lg:mb-0 lg:mr-12"
-      href="#"
-    >
-      <span
-        class="text-stone-300 hover:text-stone-100"
-      >
-        Contact
       </span>
     </a>
   </div>

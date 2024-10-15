@@ -12,7 +12,6 @@ const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAn
     { uid: 'home', label: 'Home', href: '/' },
     { uid: 'about', label: 'About', href: '#' },
     { uid: 'publications', label: 'Publications', href: '#' },
-    { uid: 'contact', label: 'Contact', href: '#' },
   ];
 
   return (

@@ -12,13 +12,10 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
         class="navbar-start"
       >
         <a
+          class="flex text-xl font-bold text-stone-300"
           href="/"
         >
-          <span
-            class="flex text-xl font-bold text-stone-300"
-          >
-            Sample Logo ©
-          </span>
+          Sample Logo ©
         </a>
       </div>
       <div
@@ -55,16 +52,6 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
               class="text-stone-300 hover:text-stone-100"
             >
               Publications
-            </span>
-          </a>
-          <a
-            class="mb-5 text-lg lg:mb-0 lg:mr-12"
-            href="#"
-          >
-            <span
-              class="text-stone-300 hover:text-stone-100"
-            >
-              Contact
             </span>
           </a>
         </div>
@@ -164,16 +151,6 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
                       class="text-stone-300 hover:text-stone-100"
                     >
                       Publications
-                    </span>
-                  </a>
-                  <a
-                    class="mb-5 text-lg lg:mb-0 lg:mr-12"
-                    href="#"
-                  >
-                    <span
-                      class="text-stone-300 hover:text-stone-100"
-                    >
-                      Contact
                     </span>
                   </a>
                 </div>
