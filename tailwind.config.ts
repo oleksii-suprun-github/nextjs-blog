@@ -22,6 +22,7 @@ const config: Config = {
         'brand-dark-purple': '#190a2f',
         'brand-pink': '#d05094',
         'brand-light-pink': '#d973a9',
+        'brand-dark': '#110722',
       },
     },
   },

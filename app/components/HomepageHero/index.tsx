@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-function Hero() {
+function HomepageHero() {
   const href = '/publications';
 
   return (
@@ -26,4 +26,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default HomepageHero;

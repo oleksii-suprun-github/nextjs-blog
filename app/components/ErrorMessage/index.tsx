@@ -3,11 +3,11 @@ function ErrorMessage({ error, reset }: { error: Error; reset: () => void }) {
     <section className="flex min-h-screen items-center justify-center bg-brand-dark-purple">
       <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
         <div className="mx-auto max-w-screen-sm text-center">
-          <h1 className="mb-10 text-6xl font-extrabold tracking-tight text-brand-pink lg:text-7xl">
+          <h1 className="mb-10 text-3xl font-extrabold tracking-tight text-brand-pink lg:text-7xl">
             An unexpected error occurred
           </h1>
           {error.message && (
-            <p className="dark: mb-12 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+            <p className="mb-12 text-xl font-bold tracking-tight text-gray-300 md:text-4xl lg:text-3xl">
               {error.message}
             </p>
           )}
