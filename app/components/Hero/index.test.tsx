@@ -28,7 +28,7 @@ describe('Hero Component', () => {
     render(<Hero />);
     expect(
       screen.getByRole('heading', {
-        name: /NextJS Newsletter Demo Project/i,
+        name: /NextJS Blog Demo Project/i,
       }),
     ).toBeInTheDocument();
     expect(
