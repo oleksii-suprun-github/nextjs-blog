@@ -36,7 +36,7 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
           </a>
           <a
             class="mb-5 text-lg lg:mb-0 lg:mr-12"
-            href="#"
+            href="/about"
           >
             <span
               class="text-stone-300 hover:text-stone-100"
@@ -46,7 +46,7 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
           </a>
           <a
             class="mb-5 text-lg lg:mb-0 lg:mr-12"
-            href="#"
+            href="/publications"
           >
             <span
               class="text-stone-300 hover:text-stone-100"
@@ -135,7 +135,7 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
                   </a>
                   <a
                     class="mb-5 text-lg lg:mb-0 lg:mr-12"
-                    href="#"
+                    href="/about"
                   >
                     <span
                       class="text-stone-300 hover:text-stone-100"
@@ -145,7 +145,7 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
                   </a>
                   <a
                     class="mb-5 text-lg lg:mb-0 lg:mr-12"
-                    href="#"
+                    href="/publications"
                   >
                     <span
                       class="text-stone-300 hover:text-stone-100"

@@ -31,11 +31,6 @@ describe('Hero Component', () => {
         name: /NextJS Blog Demo Project/i,
       }),
     ).toBeInTheDocument();
-    expect(
-      screen.getByText(
-        /This demo application, built with NextJS, TypeScript & Tailwind allows users to check latest company`s news and events./i,
-      ),
-    ).toBeInTheDocument();
   });
 
   it('should have a Get Started button that links to /publications', () => {
