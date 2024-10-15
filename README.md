@@ -1,10 +1,10 @@
-# NextJS Newsletter Page
+# NextJS Simple Blog
 
 This project is a dynamic blog page built with NextJS, TypeScript, TailwindCSS, Sanity.io, and Zod. It allows users to subscribe to newsletters while enabling administrators to manage content efficiently through a headless CMS.
 
 ## Project Description
 
-NextJS Newsletter Page is designed to provide a seamless experience for users to check latest company's updates and for administrators to manage blog content using Sanity Headless CMS.
+NextJS Simple Blog is designed to provide a seamless experience for users to check latest company's updates and for administrators to manage blog content using Sanity Headless CMS.
 
 ### Features
 
@@ -42,13 +42,13 @@ NextJS Newsletter Page is designed to provide a seamless experience for users to
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/nextjs-newsletter-page.git
+   git clone https://github.com/oleksii-suprun-github/nextjs-blog.git
    ```
 
 2. **Navigate to the project directory**:
 
    ```bash
-   cd nextjs-newsletter-page
+   cd nextjs-blog
    ```
 
 3. **Install the dependencies**:

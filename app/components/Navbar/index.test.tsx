@@ -29,21 +29,12 @@ describe('Navbar Component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should render the logo with correct attributes', () => {
-    render(<Navbar />);
-    const logo = screen.getByAltText('Logo');
-    expect(logo).toBeInTheDocument();
-    expect(logo).toHaveAttribute('src', '/logo.svg');
-    expect(logo).toHaveAttribute('width', '150');
-    expect(logo).toHaveAttribute('height', '50');
-  });
-
   it('should render navigation links', () => {
     render(<Navbar />);
     const navLinks = screen.getAllByRole('link');
     expect(navLinks).toHaveLength(9);
 
-    expect(navLinks[0]).toHaveTextContent('');
+    expect(navLinks[0]).toHaveTextContent('Sample Logo ©');
     expect(navLinks[0]).toHaveAttribute('href', '/');
 
     expect(navLinks[1]).toHaveTextContent('Home');
