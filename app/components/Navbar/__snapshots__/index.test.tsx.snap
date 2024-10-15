@@ -12,7 +12,7 @@ exports[`Navigation Component > should render correctly and match snapshot 1`] =
         class="navbar-start"
       >
         <a
-          class="flex text-xl font-bold text-stone-300"
+          class="flex text-xl font-bold"
           href="/"
         >
           NextJS Blog ©
@@ -33,7 +33,7 @@ exports[`Navigation Component > should render correctly and match snapshot 1`] =
                 href="/"
               >
                 <span
-                  class="text-stone-300 hover:text-stone-100"
+                  class="hover:text-stone-100"
                 >
                   Home
                 </span>
@@ -45,16 +45,16 @@ exports[`Navigation Component > should render correctly and match snapshot 1`] =
                 href="/about"
               >
                 <span
-                  class="text-stone-300 hover:text-stone-100"
+                  class="hover:text-stone-100"
                 >
-                  About
+                  About Me
                 </span>
               </a>
             </li>
             <li>
               <details>
                 <summary
-                  class="mb-5 text-xl text-stone-300 hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
+                  class="mb-5 text-xl hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
                 >
                   Publications
                 </summary>
@@ -113,7 +113,7 @@ exports[`Navigation Component > should render correctly and match snapshot 1`] =
               class="drawer-content z-50"
             >
               <label
-                class="drawer-button text-stone-300"
+                class="drawer-button"
                 for="drawer-mobile"
               >
                 <svg
@@ -157,7 +157,7 @@ exports[`Navigation Component > should render correctly and match snapshot 1`] =
                 for="drawer-mobile"
               />
               <div
-                class="menu min-h-full w-80 bg-brand-dark-purple p-4 text-stone-300"
+                class="menu min-h-full w-80 bg-brand-dark-purple p-4"
               >
                 <div
                   class="mb-12 mt-16 flex flex-col items-center lg:mb-0 lg:mt-0 lg:flex-row lg:items-start"
@@ -171,7 +171,7 @@ exports[`Navigation Component > should render correctly and match snapshot 1`] =
                         href="/"
                       >
                         <span
-                          class="text-stone-300 hover:text-stone-100"
+                          class="hover:text-stone-100"
                         >
                           Home
                         </span>
@@ -183,16 +183,16 @@ exports[`Navigation Component > should render correctly and match snapshot 1`] =
                         href="/about"
                       >
                         <span
-                          class="text-stone-300 hover:text-stone-100"
+                          class="hover:text-stone-100"
                         >
-                          About
+                          About Me
                         </span>
                       </a>
                     </li>
                     <li>
                       <details>
                         <summary
-                          class="mb-5 text-xl text-stone-300 hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
+                          class="mb-5 text-xl hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
                         >
                           Publications
                         </summary>

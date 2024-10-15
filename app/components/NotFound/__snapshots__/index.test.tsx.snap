@@ -17,7 +17,7 @@ exports[`NotFound Component > should render correctly and match snapshot 1`] = `
           404
         </h1>
         <p
-          class="mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl dark:text-stone-300"
+          class="dark: mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl"
         >
           Page Not Found
         </p>

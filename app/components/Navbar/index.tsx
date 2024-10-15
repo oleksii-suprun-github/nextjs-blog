@@ -34,7 +34,7 @@ const Navbar = ({ transparent }: { transparent?: boolean }) => {
       >
         <div className="container mx-auto">
           <div className="navbar-start">
-            <Link className="flex text-xl font-bold text-stone-300" href="/">
+            <Link className="flex text-xl font-bold" href="/">
               NextJS Blog ©
             </Link>
           </div>

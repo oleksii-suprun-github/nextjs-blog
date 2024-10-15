@@ -1,6 +1,6 @@
 export const navigationLinks = [
   { uid: 'home', label: 'Home', href: '/' },
-  { uid: 'about', label: 'About', href: '/about' },
+  { uid: 'about', label: 'About Me', href: '/about' },
   {
     uid: 'publications',
     href: '/publications',
@@ -31,7 +31,7 @@ export const navigationLinks = [
 ];
 
 export const footerNavLinks = [
-  { uid: 'about', href: '/about', label: 'About me' },
+  { uid: 'about', href: '/about', label: 'About Me' },
   { uid: 'nextjs', href: '/publications/nextjs', label: 'NextJS topics' },
   { uid: 'nodejs', href: '/publications/nodejs', label: 'NodeJS topics' },
   { uid: 'python', href: '/publications/python', label: 'Python topics' },

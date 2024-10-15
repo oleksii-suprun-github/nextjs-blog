@@ -7,7 +7,7 @@ function ErrorMessage({ error, reset }: { error: Error; reset: () => void }) {
             An unexpected error occurred
           </h1>
           {error.message && (
-            <p className="mb-12 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl dark:text-stone-300">
+            <p className="dark: mb-12 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
               {error.message}
             </p>
           )}

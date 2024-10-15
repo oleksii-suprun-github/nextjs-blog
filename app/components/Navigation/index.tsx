@@ -20,7 +20,7 @@ const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAn
                 <details>
                   <summary
                     className={clsx(
-                      'mb-5 text-xl text-stone-300 hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg',
+                      'mb-5 text-xl hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg',
                       isActiveLink(el.href) && 'font-bold',
                     )}
                   >
@@ -47,7 +47,7 @@ const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAn
                   href={el.href}
                   onClick={onClick}
                 >
-                  <span className="text-stone-300 hover:text-stone-100">{el.label}</span>
+                  <span className="hover:text-stone-100">{el.label}</span>
                 </Link>
               </li>
             )}

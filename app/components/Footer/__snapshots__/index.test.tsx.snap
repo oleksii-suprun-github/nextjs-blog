@@ -12,7 +12,7 @@ exports[`Footer Component > should render correctly and match snapshot 1`] = `
         class="link-hover link"
         href="/about"
       >
-        About me
+        About Me
       </a>
       <a
         class="link-hover link"

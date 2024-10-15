@@ -14,7 +14,7 @@ exports[`Navigation Component > renders correctly when journal link is active 1`
           href="/"
         >
           <span
-            class="text-stone-300 hover:text-stone-100"
+            class="hover:text-stone-100"
           >
             Home
           </span>
@@ -26,16 +26,16 @@ exports[`Navigation Component > renders correctly when journal link is active 1`
           href="/about"
         >
           <span
-            class="text-stone-300 hover:text-stone-100"
+            class="hover:text-stone-100"
           >
-            About
+            About Me
           </span>
         </a>
       </li>
       <li>
         <details>
           <summary
-            class="mb-5 text-xl text-stone-300 hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
+            class="mb-5 text-xl hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
           >
             Publications
           </summary>
@@ -92,7 +92,7 @@ exports[`Navigation Component > renders correctly when no link is active 1`] = `
           href="/"
         >
           <span
-            class="text-stone-300 hover:text-stone-100"
+            class="hover:text-stone-100"
           >
             Home
           </span>
@@ -104,16 +104,16 @@ exports[`Navigation Component > renders correctly when no link is active 1`] = `
           href="/about"
         >
           <span
-            class="text-stone-300 hover:text-stone-100"
+            class="hover:text-stone-100"
           >
-            About
+            About Me
           </span>
         </a>
       </li>
       <li>
         <details>
           <summary
-            class="mb-5 text-xl text-stone-300 hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
+            class="mb-5 text-xl hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
           >
             Publications
           </summary>
@@ -170,7 +170,7 @@ exports[`Navigation Component > renders correctly when statistics link is active
           href="/"
         >
           <span
-            class="text-stone-300 hover:text-stone-100"
+            class="hover:text-stone-100"
           >
             Home
           </span>
@@ -182,16 +182,16 @@ exports[`Navigation Component > renders correctly when statistics link is active
           href="/about"
         >
           <span
-            class="text-stone-300 hover:text-stone-100"
+            class="hover:text-stone-100"
           >
-            About
+            About Me
           </span>
         </a>
       </li>
       <li>
         <details>
           <summary
-            class="mb-5 text-xl text-stone-300 hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
+            class="mb-5 text-xl hover:text-stone-100 lg:mb-0 lg:mr-8 lg:text-lg"
           >
             Publications
           </summary>
