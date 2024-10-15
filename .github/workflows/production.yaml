@@ -12,31 +12,47 @@ on:
       - closed
 
 jobs:
-  Deploy-Production:
+  Merge-and-Deploy-Production:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout dev branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: dev
+          fetch-depth: 0
 
-      - name: Setup Node.js
+      - name: Set up Git user
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+
+      - name: Merge dev into release
+        run: |
+          git checkout release
+          git merge --no-ff dev -m "Merge dev into release [skip ci]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push changes to release branch
+        run: |
+          git push origin release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout release branch
+        uses: actions/checkout@v4
+        with:
+          ref: release
+          fetch-depth: 0
+
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
       - name: Install Vercel CLI
         run: npm install --global vercel
-
-      - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Build Project
-        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Deploy to Vercel Preview
-        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
