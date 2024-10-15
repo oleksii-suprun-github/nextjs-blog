@@ -2,7 +2,7 @@
 
 Please include a summary of the changes and the related issue. Explain the **what**, **why**, and **how** of your changes.
 
-Fixes # (issue number)
+Resolves # (issue number)
 
 ## Type of Change
 

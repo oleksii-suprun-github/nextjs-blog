@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
-import Hero from '.';
+import HomepageHero from '.';
 
 vi.mock('next/image', () => ({
   __esModule: true,
@@ -18,14 +18,14 @@ vi.mock('next/link', () => ({
   default: ({ href, children }: any) => <a href={href}>{children}</a>,
 }));
 
-describe('Hero Component', () => {
+describe('HomepageHero Component', () => {
   it('should render correctly and match snapshot', () => {
-    const { asFragment } = render(<Hero />);
+    const { asFragment } = render(<HomepageHero />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render the heading and description', () => {
-    render(<Hero />);
+    render(<HomepageHero />);
     expect(
       screen.getByRole('heading', {
         name: /NextJS Blog Demo Project/i,
@@ -34,7 +34,7 @@ describe('Hero Component', () => {
   });
 
   it('should have a Get Started button that links to /publications', () => {
-    render(<Hero />);
+    render(<HomepageHero />);
     const link = screen.getByRole('link', { name: /Get Started/i });
     expect(link).toHaveAttribute('href', '/publications');
   });

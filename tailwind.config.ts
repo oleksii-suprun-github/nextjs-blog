@@ -3,6 +3,9 @@ import type { Config } from 'tailwindcss';
 const config: Config = {
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    container: {
+      center: true,
+    },
     screens: {
       xs: '320px',
       sm: '601px',
@@ -22,6 +25,7 @@ const config: Config = {
         'brand-dark-purple': '#190a2f',
         'brand-pink': '#d05094',
         'brand-light-pink': '#d973a9',
+        'brand-dark': '#110722',
       },
     },
   },
