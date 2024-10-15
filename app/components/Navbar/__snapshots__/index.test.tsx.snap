@@ -14,12 +14,11 @@ exports[`Navbar Component > should render correctly and match snapshot 1`] = `
         <a
           href="/"
         >
-          <img
-            alt="Logo"
-            height="50"
-            src="/logo.svg"
-            width="150"
-          />
+          <span
+            class="flex text-xl font-bold text-stone-300"
+          >
+            Sample Logo ©
+          </span>
         </a>
       </div>
       <div
