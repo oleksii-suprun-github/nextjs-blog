@@ -1,7 +1,7 @@
-export const SITE_BRAND_TITLE_ENDING = '| Sample Blog';
+export const SITE_BRAND_TITLE_ENDING = '| NextJS Sample Blog';
 
-export const BLOG_URL = '/publications/blog';
+export const NEXTJS_URL = '/publications/nextjs';
 
-export const UPCOMING_EVENTS_URL = '/publications/upcoming-events';
+export const NODEJS_URL = '/publications/nodejs';
 
-export const EVENTS_RECORDINGS_URL = '/publications/past-event-recordings';
+export const PYTHON_URL = '/publications/python';

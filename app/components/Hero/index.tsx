@@ -6,13 +6,13 @@ function Hero() {
   return (
     <div className="flex items-center justify-center px-10 pb-24 pt-24 text-stone-200">
       <div className="mx-auto max-w-screen-md">
-        <span className="mb-4 flex text-5xl font-bold text-gray-200">Sample Logo ©</span>
+        <span className="mb-4 flex text-5xl font-bold text-gray-200">NextJS Blog ©</span>
         <h1 className="mb-6 break-normal text-4xl font-black leading-relaxed sm:text-6xl sm:leading-[1.25]">
           NextJS Blog Demo Project
         </h1>
         <p className="mb-8 text-xl leading-relaxed text-stone-200 sm:text-2xl sm:leading-[1.65]">
-          This demo application, built with NextJS, TypeScript & Tailwind allows users to check
-          latest company`s news and events.
+          This demo application, built with NextJS, TypeScript, Tailwind & Sanity allows users to
+          check blog posts.
         </p>
         <div>
           <Link href={href}>

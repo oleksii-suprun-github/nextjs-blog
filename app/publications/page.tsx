@@ -6,30 +6,25 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { PublicationsSection, HeadlineWithDescription } from '../ui-lib';
 import { SanityPostPreview } from '../types';
-import {
-  BLOG_URL,
-  EVENTS_RECORDINGS_URL,
-  SITE_BRAND_TITLE_ENDING,
-  UPCOMING_EVENTS_URL,
-} from '../constants';
+import { NEXTJS_URL, PYTHON_URL, NODEJS_URL, SITE_BRAND_TITLE_ENDING } from '../constants';
 
 export const metadata = {
   title: `Latest Publications ${SITE_BRAND_TITLE_ENDING}`,
   description:
-    'How can we achieve climate neutrality? Our scientific analyses and policy recommendations present effective pathways and solutions.',
+    'Enhance your coding skills with our latest tutorials and insights on Next.js, Node.js, and Python.',
 };
 
 export const revalidate = 3600;
 
 export default async function LatestPublicationsPage() {
-  const publications = await sanityFetch<SanityPostPreview[]>({
-    query: getLatestPostsQuery('blog'),
+  const nextjsPublications = await sanityFetch<SanityPostPreview[]>({
+    query: getLatestPostsQuery('nextjs'),
   });
-  const upcomingEvents = await sanityFetch<SanityPostPreview[]>({
-    query: getLatestPostsQuery('upcoming-events'),
+  const nodejsPublications = await sanityFetch<SanityPostPreview[]>({
+    query: getLatestPostsQuery('nodejs'),
   });
-  const pastEventRecordings = await sanityFetch<SanityPostPreview[]>({
-    query: getLatestPostsQuery('past-event-recordings'),
+  const pythonPublications = await sanityFetch<SanityPostPreview[]>({
+    query: getLatestPostsQuery('python'),
   });
 
   return (
@@ -44,29 +39,29 @@ export default async function LatestPublicationsPage() {
 
             <PublicationsSection>
               <HeadlineWithDescription
-                headline="Latest Publications"
-                description="Discover our newest articles and research papers"
-                link={BLOG_URL}
+                headline="Next.js"
+                description="Discover our Next.js tutorials"
+                link={NEXTJS_URL}
               />
-              <PublicationsList items={publications} />
+              <PublicationsList items={nextjsPublications} />
             </PublicationsSection>
 
             <PublicationsSection>
               <HeadlineWithDescription
-                headline="Upcoming Events"
-                description="Join us for webinars, workshops, and more."
-                link={UPCOMING_EVENTS_URL}
+                headline="Node.js"
+                description="Explore our Node.js guides"
+                link={NODEJS_URL}
               />
-              <PublicationsList items={upcomingEvents} />
+              <PublicationsList items={nodejsPublications} />
             </PublicationsSection>
 
             <PublicationsSection>
               <HeadlineWithDescription
-                headline="Past Event Recordings"
-                description="Watch recordings of our previous events"
-                link={EVENTS_RECORDINGS_URL}
+                headline="Python"
+                description="Learn Python with us"
+                link={PYTHON_URL}
               />
-              <PublicationsList items={pastEventRecordings} />
+              <PublicationsList items={pythonPublications} />
             </PublicationsSection>
           </section>
         </section>
