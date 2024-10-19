@@ -16,3 +16,8 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* SETS CUSTOM BG OPACITY FOR CARD COMPONENT */
+.card.image-full::before {
+  @apply opacity-90;
+}
