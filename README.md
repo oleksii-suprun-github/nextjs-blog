@@ -9,15 +9,16 @@ NextJS Simple Blog is designed to provide a seamless experience for users to che
 ### Features
 
 - **User Subscription**: Easy-to-use subscription form with validation.
-- **Content Management**: Manage newsletter content with Sanity.io headless CMS.
+- **Content Management**: Manage website content with Sanity.io headless CMS.
 - **Responsive Design**: Built with TailwindCSS for responsiveness across devices.
-- **Server-Side Rendering**: Utilizes NextJS for optimized performance.
+- **Server-Side Rendering**: Utilizes NextJS for optimized performance and SEO.
 - **Form Validation**: Implemented using Zod for robust data handling.
+- **Code Highlighting**: Syntax highlighting for code blocks using `react-syntax-highlighter`.
 
 ### Notable Libraries and Technologies
 
 - **NextJS**: React framework with server-side rendering capabilities.
-- **TypeScript**: Adds static typing to JavaScript for safer code.
+- **TypeScript**: Adds static typing to JavaScript for safer, more maintainable code.
 - **TailwindCSS**: Utility-first CSS framework for rapid UI development.
 - **Sanity.io**: Headless CMS for flexible content management.
 - **Zod**: TypeScript-first schema validation library.
@@ -25,6 +26,8 @@ NextJS Simple Blog is designed to provide a seamless experience for users to che
 - **Styled-Components**: Allows writing CSS-in-JS for component styling.
 - **Sentry**: Error monitoring and performance tracking.
 - **PortableText**: Sanity Portable Text renderer for rich text content.
+- **React Hook Form**: Library for building forms with easy validation.
+- **React Syntax Highlighter**: Provides syntax highlighting for code blocks.
 - **React Icons**: A popular icon library for React projects.
 
 ## Table of Contents
@@ -89,10 +92,12 @@ NextJS Simple Blog is designed to provide a seamless experience for users to che
 
 ## Dependencies
 
+- `@hookform/resolvers`: ^3.9.0
 - `@portabletext/react`: ^3.1.0
 - `@sanity/client`: ^6.21.3
+- `@sanity/code-input`: ^4.1.4
 - `@sanity/icons`: ^3.4.0
-- `@sanity/image-url`: 1
+- `@sanity/image-url`: ^1.0.2
 - `@sanity/types`: ^3.57.4
 - `@sanity/ui`: ^2.8.9
 - `@sanity/vision`: 3
@@ -100,12 +105,15 @@ NextJS Simple Blog is designed to provide a seamless experience for users to che
 - `@tailwindcss/typography`: ^0.5.15
 - `@typescript-eslint/eslint-plugin`: ^7.14.1
 - `@vercel/postgres`: ^0.10.0
+- `@vercel/speed-insights`: ^1.0.12
 - `clsx`: ^2.1.1
 - `daisyui`: ^4.12.10
 - `next`: ^14.2.15
 - `next-sanity`: 9.5.0
 - `react`: ^18.3.1
 - `react-dom`: ^18
+- `react-hook-form`: ^7.53.0
+- `react-syntax-highlighter`: ^15.6.1
 - `sanity`: ^3.57.4
 - `server-only`: ^0.0.1
 - `styled-components`: ^6.1
@@ -119,6 +127,7 @@ NextJS Simple Blog is designed to provide a seamless experience for users to che
 - `@types/node`: ^20
 - `@types/react`: ^18
 - `@types/react-dom`: ^18
+- `@types/react-syntax-highlighter`: ^15.5.13
 - `@types/testing-library__jest-dom`: ^6.0.0
 - `@vitejs/plugin-react`: ^4.3.2
 - `@vitest/coverage-v8`: ^2.1.1
