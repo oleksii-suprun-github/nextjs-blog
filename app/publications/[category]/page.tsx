@@ -65,7 +65,7 @@ export default async function Page({
                 category
               />
               <PublicationsList items={posts} />
-              {categoryMetadata.totalPosts > 1 && (
+              {categoryMetadata.totalPosts > limit && (
                 <Pagination
                   currentPage={page}
                   totalPosts={categoryMetadata.totalPosts}
