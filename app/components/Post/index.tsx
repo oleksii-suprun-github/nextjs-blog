@@ -26,9 +26,9 @@ function Post({ post }: { post: SanityPost }) {
       <article className="bg-brand-dark-purple pt-12">
         <div className="px-4">
           <div className="container">
-            <div className="flex flex-col justify-between gap-5 pb-16 lg:flex-row">
+            <div className="flex flex-col justify-between pb-16 lg:flex-row lg:gap-5">
               <PostContent content={post.content} />
-              <PostSidebar toc={post.headings} />
+              <PostSidebar tocData={post.headings} />
             </div>
           </div>
         </div>

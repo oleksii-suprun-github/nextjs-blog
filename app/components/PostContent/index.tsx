@@ -14,7 +14,7 @@ const components: Partial<PortableTextReactComponents> = {
 
 function PostContent({ content }: { content: SanityPost['content'] }) {
   return (
-    <main className="prose prose-lg w-4/5 text-stone-200 prose-headings:text-stone-200 prose-strong:text-stone-200">
+    <main className="prose prose-lg text-stone-200 prose-headings:text-stone-200 prose-strong:text-stone-200 md:w-4/5">
       <PortableText value={content} components={components} />
     </main>
   );
