@@ -29,6 +29,7 @@ NextJS Simple Blog is designed to provide a seamless experience for users to che
 - **React Hook Form**: Library for building forms with easy validation.
 - **React Syntax Highlighter**: Provides syntax highlighting for code blocks.
 - **React Icons**: A popular icon library for React projects.
+- **Speakingurl**: Library for generating URL-friendly slugs.
 
 ## Table of Contents
 
@@ -116,6 +117,7 @@ NextJS Simple Blog is designed to provide a seamless experience for users to che
 - `react-syntax-highlighter`: ^15.6.1
 - `sanity`: ^3.57.4
 - `server-only`: ^0.0.1
+- `speakingurl`: ^14.0.1
 - `styled-components`: ^6.1
 - `use-debounce`: ^10.0.3
 - `zod`: ^3.23.8
@@ -128,6 +130,7 @@ NextJS Simple Blog is designed to provide a seamless experience for users to che
 - `@types/react`: ^18
 - `@types/react-dom`: ^18
 - `@types/react-syntax-highlighter`: ^15.5.13
+- `@types/speakingurl`: ^13.0.6
 - `@types/testing-library__jest-dom`: ^6.0.0
 - `@vitejs/plugin-react`: ^4.3.2
 - `@vitest/coverage-v8`: ^2.1.1
