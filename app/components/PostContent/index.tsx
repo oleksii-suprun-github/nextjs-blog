@@ -1,11 +1,11 @@
 import { SanityPost } from '@/app/types';
-import { codeComponent } from '@/sanity/schemaTypes/sanityComponents';
+import codeHighlighter from '@/sanity/components/codeHighlighter';
 import { PortableText } from 'next-sanity';
 
 function PostContent({ content }: { content: SanityPost['content'] }) {
   const components = {
     types: {
-      code: codeComponent,
+      code: codeHighlighter,
     },
   };
 

@@ -1,7 +1,7 @@
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import highlightTheme from 'react-syntax-highlighter/dist/esm/styles/hljs/atelier-cave-dark';
 
-export const codeComponent = ({ value }: { value: { language?: string; code?: string } }) => {
+const codeHighlighter = ({ value }: { value: { language?: string; code?: string } }) => {
   if (value?.language && value?.code) {
     return (
       <div className="my-10">
@@ -12,3 +12,5 @@ export const codeComponent = ({ value }: { value: { language?: string; code?: st
     );
   }
 };
+
+export default codeHighlighter;
