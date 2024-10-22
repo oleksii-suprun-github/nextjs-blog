@@ -46,6 +46,7 @@ export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{
     },
     "slug": slug.current,
     previewText,
+    "headings": content[length(style) == 2 && string::startsWith(style, "h2")],
     content,
     "image": {
         "url": mainImage.asset->url,

@@ -1,16 +1,20 @@
 import { SanityPost } from '@/app/types';
 import codeHighlighter from '@/sanity/components/codeHighlighter';
-import { PortableText } from 'next-sanity';
+import headingAnchorHandler from '@/sanity/components/headingAnchorHandler';
+import { PortableText, PortableTextReactComponents } from '@portabletext/react';
+
+const components: Partial<PortableTextReactComponents> = {
+  block: {
+    h2: headingAnchorHandler,
+  },
+  types: {
+    code: codeHighlighter,
+  },
+};
 
 function PostContent({ content }: { content: SanityPost['content'] }) {
-  const components = {
-    types: {
-      code: codeHighlighter,
-    },
-  };
-
   return (
-    <main className="prose prose-lg w-4/5 text-stone-200 prose-headings:text-stone-200 prose-strong:text-stone-200">
+    <main className="prose prose-lg text-stone-200 prose-headings:text-stone-200 prose-strong:text-stone-200 md:w-4/5">
       <PortableText value={content} components={components} />
     </main>
   );
