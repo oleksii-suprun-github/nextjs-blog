@@ -30,6 +30,7 @@ export type SanityPostPreview = SanityPostBase & {
 };
 
 export type SanityPost = SanityPostBase & {
+  headings: any[];
   previewText: string;
   content: TypedObject;
 };

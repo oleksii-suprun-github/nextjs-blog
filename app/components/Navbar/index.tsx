@@ -28,7 +28,7 @@ const Navbar = ({ transparent }: { transparent?: boolean }) => {
     <>
       <nav
         className={clsx(
-          'navbar px-4 pb-20 pt-12',
+          'navbar pb-16 pt-10 sm:pb-20',
           transparent ? 'bg-transparent' : 'bg-brand-purple',
         )}
       >

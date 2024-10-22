@@ -2,9 +2,7 @@
 
 exports[`PostHero Component > renders correctly and matches the snapshot 1`] = `
 <DocumentFragment>
-  <header
-    class="px-4"
-  >
+  <header>
     <div
       class="container"
     >

@@ -31,7 +31,7 @@ export default async function LatestPublicationsPage() {
     <>
       <Navbar />
       <main>
-        <section className="bg-brand-dark-purple px-4 py-16">
+        <section className="bg-brand-dark-purple py-16">
           <section className="container">
             <div className="mb-16">
               <Breadcrumbs />

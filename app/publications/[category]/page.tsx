@@ -53,7 +53,7 @@ export default async function Page({
     <>
       <Navbar />
       <main>
-        <section className="bg-brand-dark-purple px-4 py-16">
+        <section className="bg-brand-dark-purple py-16">
           <section className="container mb-12">
             <Breadcrumbs />
           </section>
@@ -65,7 +65,7 @@ export default async function Page({
                 category
               />
               <PublicationsList items={posts} />
-              {categoryMetadata.totalPosts > 1 && (
+              {categoryMetadata.totalPosts > limit && (
                 <Pagination
                   currentPage={page}
                   totalPosts={categoryMetadata.totalPosts}
