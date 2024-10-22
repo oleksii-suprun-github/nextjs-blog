@@ -36,3 +36,6 @@ export const footerNavLinks = [
   { uid: 'nodejs', href: '/publications/nodejs', label: 'NodeJS topics' },
   { uid: 'python', href: '/publications/python', label: 'Python topics' },
 ];
+
+export const getContentBlockByType = (blocks: any[], type: string) =>
+  blocks.find((block: { _type: string }) => block._type === type);

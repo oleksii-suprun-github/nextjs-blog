@@ -57,3 +57,24 @@ export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{
 export const postPathsQuery = groq`*[_type == "post" && defined(slug.current)][]{
     "params": { "slug": slug.current }
   }`;
+
+export const pageQuery = groq`*[_type == "page" && slug.current == $slug][0]{ 
+    title,
+    "slug": slug.current,
+    publishedAt,
+    pageBuilder[]{
+    _type == "Text Block" => {
+      _type,
+      _key,
+      content
+    },
+    _type == "Image Block" => {
+      _type,
+      _key,
+    "image": {
+        "url": Image.asset->url,
+        "alt": Image.alt
+    },
+    },
+    }
+  }`;

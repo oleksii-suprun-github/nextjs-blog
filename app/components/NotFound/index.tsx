@@ -15,7 +15,7 @@ const NotFound = ({
         <h1 className="mb-4 text-7xl font-extrabold tracking-tight text-brand-pink lg:text-9xl">
           404
         </h1>
-        <p className="dark: mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+        <p className="mb-4 text-3xl font-bold tracking-tight text-gray-400 md:text-4xl">
           {title || 'Page Not Found'}
         </p>
         <p className="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
