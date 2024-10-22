@@ -4,6 +4,7 @@ import PostHero from '@/app/components/PostHero';
 import CommentForm from '@/app/components/CommentForm';
 import CommentsSection from '@/app/components/CommentsSection';
 import { SanityPost } from '@/app/types';
+import TableOfContent from '../TableOfContent';
 
 function Post({ post }: { post: SanityPost }) {
   const creationDate = new Intl.DateTimeFormat('en-GB', {
@@ -23,8 +24,11 @@ function Post({ post }: { post: SanityPost }) {
         creationDate={creationDate}
         image={imageData}
       />
+      <div className="lg:hidden">
+        <TableOfContent data={post.headings} />
+      </div>
       <article className="bg-brand-dark-purple pt-12">
-        <div className="px-4">
+        <div className="">
           <div className="container">
             <div className="flex flex-col justify-between pb-16 lg:flex-row lg:gap-5">
               <PostContent content={post.content} />
@@ -34,7 +38,7 @@ function Post({ post }: { post: SanityPost }) {
         </div>
         <aside className="bg-brand-purple py-12" id="comments-section">
           <div className="container">
-            <div className="mx-auto mb-12 w-2/3">
+            <div className="mx-auto mb-12 md:w-2/3">
               <CommentForm />
               <CommentsSection />
             </div>
