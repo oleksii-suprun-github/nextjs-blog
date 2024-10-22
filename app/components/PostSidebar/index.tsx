@@ -7,7 +7,7 @@ const PostSidebar = ({ toc }: { toc: any[] }) => {
     const anchor = speakingurl(text);
 
     return (
-      <li className="mb-3 underline" key={heading._key}>
+      <li className="mb-3 text-lg underline" key={heading._key}>
         <Link href={`#${anchor}`}>{text}</Link>
       </li>
     );
@@ -15,8 +15,8 @@ const PostSidebar = ({ toc }: { toc: any[] }) => {
 
   return (
     <aside className="w-1/5">
-      <div id="toc" className="">
-        <h3 className="mb-5 text-2xl font-semibold">Table of Content</h3>
+      <div id="toc">
+        <h3 className="mb-6 text-2xl font-semibold">Table of Content</h3>
         <ul>{headings}</ul>
       </div>
     </aside>
