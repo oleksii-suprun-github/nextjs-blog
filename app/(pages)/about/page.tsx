@@ -34,7 +34,7 @@ async function About() {
   const textBlock = getContentBlockByType(pageData.pageBuilder, 'Text Block');
 
   return (
-    <div className="">
+    <div>
       <div className="container py-20">
         <h1 className="mb-16 text-5xl font-semibold">{pageData.title}</h1>
         <div className="mb-20 flex flex-col gap-16 md:flex-row lg:items-center">

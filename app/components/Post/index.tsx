@@ -28,7 +28,7 @@ function Post({ post }: { post: SanityPost }) {
         <TableOfContent data={post.headings} />
       </div>
       <article className="bg-brand-dark-purple pt-12">
-        <div className="">
+        <div>
           <div className="container">
             <div className="flex flex-col justify-between pb-16 lg:flex-row lg:gap-5">
               <PostContent content={post.content} />

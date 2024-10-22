@@ -14,7 +14,7 @@ type PostHeroType = {
 function PostHero({ creationDate, title, introduction, image }: PostHeroType) {
   return (
     <>
-      <header className="">
+      <header>
         <div className="container">
           <div className="mb-16">
             <Breadcrumbs />
