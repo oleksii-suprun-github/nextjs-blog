@@ -11,7 +11,8 @@ const imageBlockType = defineType({
       type: 'string',
     }),
     defineField({
-      name: 'Image',
+      name: 'image',
+      title: 'Image',
       type: 'image',
       validation: (Rule) => Rule.required(),
       options: {

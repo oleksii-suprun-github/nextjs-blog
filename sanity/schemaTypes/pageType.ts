@@ -13,6 +13,12 @@ export const pageType = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'metaDescription',
+      title: 'Meta Description',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: 'slug',
       type: 'slug',
       options: {

@@ -43,3 +43,12 @@ export type FeedbackFormData = {
 export type CommentFormData = {
   comment: string;
 };
+
+export type SanityPage = {
+  title: string;
+  _key: string;
+  slug: string;
+  publishedAt: string;
+  description: string;
+  pageBuilder: any[];
+};
