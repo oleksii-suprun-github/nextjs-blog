@@ -1,6 +1,6 @@
 'use client';
 
-import { MouseEventHandler } from 'react';
+import { Fragment, MouseEventHandler } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import clsx from 'clsx';
@@ -14,7 +14,7 @@ const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAn
     <div className="mb-12 mt-16 flex flex-col items-center lg:mb-0 lg:mt-0 lg:flex-row lg:items-start">
       <ul className="menu menu-vertical lg:menu-horizontal">
         {navigationLinks.map((el) => (
-          <>
+          <Fragment key={el.uid}>
             {el?.submenu?.length ? (
               <li>
                 <details>
@@ -38,7 +38,7 @@ const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAn
                 </details>
               </li>
             ) : (
-              <li key={el.uid}>
+              <li>
                 <Link
                   className={clsx(
                     'mb-5 text-xl lg:mb-0 lg:mr-8 lg:text-lg',
@@ -51,7 +51,7 @@ const Navigation = ({ onClick = () => {} }: { onClick?: MouseEventHandler<HTMLAn
                 </Link>
               </li>
             )}
-          </>
+          </Fragment>
         ))}
       </ul>
     </div>
