@@ -6,10 +6,10 @@ exports[`PublicationCard Component > should render correctly and match snapshot 
     href="/publications/test-category/test-slug"
   >
     <div
-      class="card image-full shadow-xl"
+      class="card card-compact bg-base-100 shadow-xl"
     >
       <figure
-        class="sm:h-[470px] lxs-sm:h-[380px] md:h-[420px]"
+        class="lxs-sm:h-[200px] md:h-[250px]"
       >
         <img
           alt="Test Image"
@@ -25,7 +25,7 @@ exports[`PublicationCard Component > should render correctly and match snapshot 
         />
       </figure>
       <div
-        class="card-body"
+        class="card-body sm:h-[340px] md:h-[320px] lg:h-[265px]"
       >
         <span
           class="text-md text-slate-300"
